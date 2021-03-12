@@ -22,24 +22,27 @@ Your project will include all of the following main elements:
 **All materials will be submitted on canvas. You should create a GitHub repo and share the link to the repo as part of your submission on canvas.**
 
 ## Executive Project Summary
-An executive summary should be evocative. It should capture a reader and make them want to be a part of your idea. You will write an executive summary that defines the goals and objectives of your project in language that is easily readable and mental-image evoking. I (or anyone else) should be able to read your executive summary and instantly know a) what you are doing and b) why it is important. Executive summaries should be exciting and interesting. It is the first (and likely the only) chance for you to engage your reader and, in a real world setting, would determine if your product gets funded. An executive summary does not need technical detail to describe interesting functionality. You should mention your product by name without using phrases such as "the team", "the class", "the instructor", etc.
+    An executive summary should be evocative. It should capture a reader and make them want to be a part of your idea. You will write an executive summary that defines the
+    goals and objectives of your project in language that is easily readable and mental-image evoking. I (or anyone else) should be able to read your executive summary and
+    instantly know a) what you are doing and b) why it is important. Executive summaries should be exciting and interesting. It is the first (and likely the only) chance for
+    you to engage your reader and, in a real world setting, would determine if your product gets funded. An executive summary does not need technical detail to describe
+    interesting functionality. You should mention your product by name without using phrases such as "the team", "the class", "the instructor", etc.
 
-### Submission materials
-You should submit a summary document (in markdown format) on your GitHub project repo. Call the file README.md and place it in the top-level directory of your GitHub project.
 
-It should contain the following:
+### Submission materials - You should submit a summary document (in markdown format) on your GitHub project repo. Call the file README.md and place it in the top-level directory of your GitHub project.
+    It should contain the following:
+    1. A problem statement identifying the problem your product addresses.
+    1. Project goals and objectives in a numbered or bulleted list that you will undertake to address the identified problem.
+    1. The merit of accomplishing the project goals and objectives in terms of how it helps end users, society, or particular industries/sectors.
 
-1. A problem statement identifying the problem your product addresses.
-1. Project goals and objectives in a numbered or bulleted list that you will undertake to address the identified problem.
-1. The merit of accomplishing the project goals and objectives in terms of how it helps end users, society, or particular industries/sectors.
-
-You can make use of the following markdown syntax to embed your executive summary in your README.md file:
 
 ```markdown
 # Project Repo Name
+CYBR8480_Semester_Project
 
-## Executive Summary
-Problem statement text goes here
+## Executive Summary - Problem statement text goes here
+
+Thanks for technology, the contemporary people's life become very convenient and efficient. More Specifically, electronics can help them experience variety of services without leaving their houses. Such as, ordering foods, online shopping, finding jobs, remote working, facetimes with others are living in different countries, or electronic business. However, with relying on those technologies, people's health is gradually decreasing in a rapid way. Due to lack of exercise, all kinds of diseases jump into people life. Therefore, in this project, I would like to develop a kind of exercise reward body healthy app to help people increase their health condition and raise attention on the importance of workout. Additionally, you might notice the word "reward". It means very simple - people will get rewarded (coupon, gift card, or even cash) depending on their workout rate. This bonus mechanism can inspire people's interest on doing exercises.
 
 ## Project Goals
 * Bulleted list item 1
