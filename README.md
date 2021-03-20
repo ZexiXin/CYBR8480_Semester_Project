@@ -2,7 +2,6 @@
 A semester project regarding to healthy care records
 
 ## Overview
-This project tasks you with developing and expressing an application idea, identifying its requirements, creating a design to address the requirements,  and, finally, to implement and test an app and its associated components.  
 
 Your project will include all of the following main elements:  
 
@@ -38,32 +37,20 @@ interesting functionality. You should mention your product by name without using
 
 
 
-### Project Repo Name
-CYBR8480_Semester_Project
+### Project Name
+HealthReward app makes us better
 
 #### Executive Summary - Problem statement text goes here
 
 Thanks for technology, the contemporary people's life become very convenient and efficient. More Specifically, electronics can help them experience variety of services without leaving their houses. Such as, ordering foods, online shopping, finding jobs, remote working, facetimes with others are living in different countries, or electronic business. However, with relying on those technologies, people's health is gradually decreasing in a rapid way. Due to lack of exercise, all kinds of diseases jump into people life. Therefore, in this project, I would like to develop a kind of exercise reward body healthy app to help people increase their health condition and raise attention on the importance of workout. Additionally, you might notice the word "reward". It means very simple - people will get rewarded (coupon, gift card, or even cash) depending on their workout rate. This bonus mechanism can inspire people's interest on doing exercises. Additionally, we are still providing the customer support service to help our user while they encounter with any other problems. 
 
 #### Project Goals
-* User authentication mechanism: We will provide an app user interface to allow our user to interact with our customer service. The privacy is guaranteed because every user can only access his own comments and our support service responses. In other words, individual users’ comment will not be exposed to everyone in our system.  
-* Heart rate measurement: To measure user's heart rate, our users don't need to purchase any other peripheral to test their heart rate after or before workout. Hence, it saves users expenditure. More speciffically, we use the image processing technique to detect the user's pulse by taking advantages from phone's camera.
-* Video guide of exercise procedures: Which is a video list to let user access their perfered video demo to refer while they have no idea how to do the exercise.
-* Route calculator: This will be used while user would like to do the outdoor execise like jogging, biking, or hiking. Our app will offer a trail recorded to help user realized how mauch time he/she has spent on outdoor exercising and the movement route which can help him/her check if it satify their daily workout plan.  
+* **User authentication mechanism:** We will provide an app user interface to allow our user to interact with our customer service. The privacy is guaranteed because every user can only access his own comments and our support service responses. In other words, individual users’ comment will not be exposed to everyone in our system.  
+* **Heart rate measurement:** To measure user's heart rate, our users don't need to purchase any other peripheral to test their heart rate after or before workout. Hence, it saves users expenditure. More speciffically, we use the image processing technique to detect the user's pulse by taking advantages from phone's camera.
+* **Video guide of exercise procedures:** Which is a video list to let user access their perfered video demo to refer while they have no idea how to do the exercise.
+* **Route calculator:** This will be used while user would like to do the outdoor execise like jogging, biking, or hiking. Our app will offer a trail recorded to help user realized how mauch time he/she has spent on outdoor exercising and the movement route which can help him/her check if it satify their daily workout plan.  
 
 
-
-### Grading criteria
-Your summaries will be graded as follows following:
-
-| | Meets expectations (9-10) | Some Issues (6-8) | Does not meet expectations (0-5)|
-|---|---|---|---|
-| Problem statement | Clearly identifies the context of the problem addressed by your project. Answers the question - Why is this of interest? | Problem context not clearly identified, leaves reader wondering what the product is for. | Problem context unclear or not identified. |
-| Project goals | Project goals are clear, concise, and in a bulleted list. Efforts are clearly tied to addressing the identified problem. Goals are stated at a high level and are free of technical jargon or unnecessary detail. | Goals are not as clear, 'in the weeds,' or not directly applicable to the problem. | No goals are identified or there are severe clarity issues. |
-| Project Merit | The benefits for pursing the project are clear and tied to addressing the identified problem(s). | Benefits and merits of the proposed work are muddled or not tied to the problem statement. | Merits are difficult to identify or missing entirely. |
-| Length | Summary is of reasonable length (no longer than three paragraphs, not too short)| Summary is slightly too short or too long | Summary is extremely short or long. |
-| Grammar, spelling, syntax | Summary is evocative and free of grammar, spelling, or syntax issues. | Summary contains a few syntax, grammar, or spelling issues. | Summary is difficult to read due to glaring grammar, syntax, or spelling issues|
-| Use of markdown | Summary should render as the project homepage on your GitHub repo. It should following markdown conventions. | Doesn't perfectly follow markdown syntax or isn't rendered on the repo home page correctly. | Doesn't use markdown or isn't displayed in the repo.|
 
 ## Requirement Analysis
 Requirements are extremely important for conducting a successful project. Collecting requirements about an application means understanding what your end user is going to do with the product. To understand requirements user stories, misuser stories, use cases, and misuse cases are used to encapsulate and represent behavior.
@@ -72,21 +59,26 @@ Requirements are extremely important for conducting a successful project. Collec
 #### User stories
 Pay careful attention to structure the user stories as we discussed in CYBR8470. Specifically, submit your user stories using the following template. Include them directly on your GitHub repo README.md file.
 
+
+```markdown
 As a **user/role**, I want to **goal** so I can **rationale**.
 
 For each user story, also define acceptance criteria.
 Your acceptance criteria should define the set of things required to understand when you are done with the user story.
 
 You can make use of the following markdown syntax to embed your user stories in your README.md file:
+```
 
-```markdown
 ## User stories
-As a **user/role**, I want **goal** so that **rationale**.
+ **As a **user/role**, I want **goal** so that **rationale**.**
+
+As a customer, I want increase my health by using the HealthReward, so that I will not stay in the Suboptimal health condition or even protect myself from diseases.  
+
 **Acceptance Criteria:**
 * Insert criteria 1 here
 * Insert criteria 2 here
 * etc
-```
+
 
 example:
 
