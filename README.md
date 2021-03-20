@@ -43,12 +43,14 @@ CYBR8480_Semester_Project
 
 #### Executive Summary - Problem statement text goes here
 
-Thanks for technology, the contemporary people's life become very convenient and efficient. More Specifically, electronics can help them experience variety of services without leaving their houses. Such as, ordering foods, online shopping, finding jobs, remote working, facetimes with others are living in different countries, or electronic business. However, with relying on those technologies, people's health is gradually decreasing in a rapid way. Due to lack of exercise, all kinds of diseases jump into people life. Therefore, in this project, I would like to develop a kind of exercise reward body healthy app to help people increase their health condition and raise attention on the importance of workout. Additionally, you might notice the word "reward". It means very simple - people will get rewarded (coupon, gift card, or even cash) depending on their workout rate. This bonus mechanism can inspire people's interest on doing exercises.
+Thanks for technology, the contemporary people's life become very convenient and efficient. More Specifically, electronics can help them experience variety of services without leaving their houses. Such as, ordering foods, online shopping, finding jobs, remote working, facetimes with others are living in different countries, or electronic business. However, with relying on those technologies, people's health is gradually decreasing in a rapid way. Due to lack of exercise, all kinds of diseases jump into people life. Therefore, in this project, I would like to develop a kind of exercise reward body healthy app to help people increase their health condition and raise attention on the importance of workout. Additionally, you might notice the word "reward". It means very simple - people will get rewarded (coupon, gift card, or even cash) depending on their workout rate. This bonus mechanism can inspire people's interest on doing exercises. Additionally, we are still providing the customer support service to help our user while they encounter with any other problems. 
 
 #### Project Goals
-* Bulleted list item 1
-* Bulleted list item 2
-* etc
+* User authentication mechanism: We will provide an app user interface to allow our user to interact with our customer service. The privacy is guaranteed because every user can only access his own comments and our support service responses. In other words, individual users’ comment will not be exposed to everyone in our system.  
+* Heart rate measurement: To measure user's heart rate, our users don't need to purchase any other peripheral to test their heart rate after or before workout. Hence, it saves users expenditure. More speciffically, we use the image processing technique to detect the user's pulse by taking advantages from phone's camera.
+* Video guide of exercise procedures: Which is a video list to let user access their perfered video demo to refer while they have no idea how to do the exercise.
+* Route calculator: This will be used while user would like to do the outdoor execise like jogging, biking, or hiking. Our app will offer a trail recorded to help user realized how mauch time he/she has spent on outdoor exercising and the movement route which can help him/her check if it satify their daily workout plan.  
+
 
 
 ### Grading criteria
