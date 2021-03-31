@@ -38,17 +38,18 @@ interesting functionality. You should mention your product by name without using
 
 
 ### Project Name
-HealthReward app makes us better
+HealthCare app makes us better
 
 #### Executive Summary - Problem statement text goes here
 
-Thanks for technology, the contemporary people's life become very convenient and efficient. More Specifically, electronics can help them experience variety of services without leaving their houses. Such as, ordering foods, online shopping, finding jobs, remote working, facetimes with others are living in different countries, or electronic business. However, with relying on those technologies, people's health is gradually decreasing in a rapid way. Due to lack of exercise, all kinds of diseases jump into people life. Therefore, in this project, I would like to develop a kind of exercise reward body healthy app to help people increase their health condition and raise attention on the importance of workout. Additionally, you might notice the word "reward". It means very simple - people will get rewarded (coupon, gift card, or even cash) depending on their workout rate. This bonus mechanism can inspire people's interest on doing exercises. Additionally, we are still providing the customer support service to help our user while they encounter with any other problems. 
+Thanks for technology, the contemporary people's life become very convenient and efficient. More Specifically, electronics can help them experience variety of services without leaving their houses. Such as, ordering foods, online shopping, finding jobs, remote working, facetimes with others are living in different countries, or electronic business. However, with relying on those technologies, people's health is gradually decreasing in a rapid way. Due to lack of exercise, all kinds of diseases jump into people life. Therefore, in this project, I would like to develop a kind of exercise reward body healthy app to help people increase their health condition and raise attention on the importance of workout. Additionally, we are still providing the customer support service to help our user while they encounter with any other problems. If it possible, I would like to embed with a payment function into the app and provide some bonus mechanism (cash, giftcard, and coupon) which can be used for inspiring people's interest on using my app while they would like to do the exercise. 
 
 #### Project Goals
 * **User authentication mechanism:** We will provide an app user interface to allow our user to interact with our customer service. The privacy is guaranteed because every user can only access his own comments and our support service responses. In other words, individual users’ comment will not be exposed to everyone in our system.  
 * **Heart rate measurement:** To measure user's heart rate, our users don't need to purchase any other peripheral to test their heart rate after or before workout. Hence, it saves users expenditure. More speciffically, we use the image processing technique to detect the user's pulse by taking advantages from phone's camera.
-* **Video guide of exercise procedures:** Which is a video list to let user access their perfered video demo to refer while they have no idea how to do the exercise.
-* **Route calculator:** This will be used while user would like to do the outdoor execise like jogging, biking, or hiking. Our app will offer a trail recorded to help user realized how mauch time he/she has spent on outdoor exercising and the movement route which can help him/her check if it satify their daily workout plan.  
+* **Video guide of exercise procedures:** Which is a video list to let user access their perfered video demo to refer while they have no idea how to do the exercise. Also, this video guide page can let user search specific video to fit in his/her perference even through that are not related to exercises. 
+* **Route calculator:** This will be used while user would like to do the outdoor execise like jogging, biking, or hiking. Our app will offer a trail calculator to help user realized what the distance he/she will spend on outdoor exercising and the movement route which can help him/her check if it satify their daily workout plan.  
+* 
 
 
 
@@ -56,8 +57,6 @@ Thanks for technology, the contemporary people's life become very convenient and
 Requirements are extremely important for conducting a successful project. Collecting requirements about an application means understanding what your end user is going to do with the product. To understand requirements user stories, misuser stories, use cases, and misuse cases are used to encapsulate and represent behavior.
 
 ### Submission materials
-#### User stories
-Pay careful attention to structure the user stories as we discussed in CYBR8470. Specifically, submit your user stories using the following template. Include them directly on your GitHub repo README.md file.
 
 
 ```markdown
@@ -65,19 +64,28 @@ As a **user/role**, I want to **goal** so I can **rationale**.
 
 For each user story, also define acceptance criteria.
 Your acceptance criteria should define the set of things required to understand when you are done with the user story.
-
 You can make use of the following markdown syntax to embed your user stories in your README.md file:
 ```
 
-## User stories
+## User stories 1
+Pay careful attention to structure the user stories as we discussed in CYBR8470. Specifically, submit your user stories using the following template. Include them directly on your GitHub repo README.md file.
+
  **As a **user/role**, I want **goal** so that **rationale**.**
 
-As a customer, I want increase my health by using the HealthReward, so that I will not stay in the Suboptimal health condition or even protect myself from diseases.  
+As a busy employee who has to extra work after the normal working time, I want increase my health condition by watching some professional video of indoor execises with lower cost and spend less time, so that I will not stay in the suboptimal health condition or even protect myself from diseases.  
 
 **Acceptance Criteria:**
-* Insert criteria 1 here
-* Insert criteria 2 here
-* etc
+* A busy employee uses HealthCare mobile app to do indoor workout  
+  * “Given I’m a busy employee who doesn't have time to find personal trainer to teach him/her about how to do indoor exercise, and I download the HealthCare mobile app. When     I open the HealthCare mobile app on my phone, and I am able to find some short indoor exercise videos that are recorded by professional coach. Then, I can spend less time     on workout to stay healthy."  
+
+## User stories 2
+
+As a fitness fanatic, I want to measure my heart rate after I have done intensive exercise in the gym without using a wearable detector, so that I will not working out too hard to cause me drained or injury.
+
+**Acceptance Criteria:**
+* A fitness fanatic uses HealthCare mobile app to measure heart rate after exercising, in case higher heart rate causes drained or injury. 
+  * “Given I’m a fitness fanatic who likes to do intensive execise, and I download the HealthCare mobile app. When I have working out for a while, I can place my fingers on my     phone's camera and test my heart rate without wearing any physical detector. Then, I can decide if I need to do more exercise or not, so I don't get drained or injury."  
+
 
 
 example:
@@ -86,27 +94,30 @@ example:
 As a **smarthome automation enthusiast that likes to cook**, I want **my kitchen to automatically reorder my staple groceries for me when I am nearly out of them**, so that **I don't have to spend time filling the grocery shopping cart**.
 ```
 
-#### Misuser stories
+
+
+ 
+## Misuser stories  
+As a **misuser/misuser-role**, I want **misuse goal** so that **bad rationale**.
+
 Also think about and define misuser stories. Misuser stories are nothing more than user stories, except for users seeking to abuse your app. Use the same format as above, except replace user with misuser and use the ```goal``` to define the misuse goal. I.e.
 
-As a **misuser**, I want **misuse goal** so **bad rationale**.
+
 
 example:
+```markdown
+  As a **Russian intelligence officer tracking us military deployments**, I want **to steal user fitness and GPS data from US soldier's fitbits** so that **I can understand     their exercise patterns, trail usage, and daily schedules**.
+```
 
-As a **Russian intelligence officer tracking us military deployments**, I want **to steal user fitness and GPS data from US soldier's fitbits** so that **I can understand their exercise patterns, trail usage, and daily schedules**.
-
+As a **misuser/misuser-role**, I want **misuse goal** so that **bad rationale**.
 Under each misuser story, identify at least one way you will counter this misuse in your application design.
-
 You can make use of the following markdown syntax to embed your misuser stories in your README.md file:
 
-```markdown
-## Misuser stories
-As a **misuser/misuser-role**, I want **misuse goal** so that **bad rationale**.
 **Mitigations:**
 * Mitigation technique 1 to be used goes here
 * Mitigation technique 2 to be used goes here
 * etc
-```
+* 
 
 ### Grading Criteria
 User stories and misuser stories will be graded as follows.
