@@ -68,9 +68,6 @@ You can make use of the following markdown syntax to embed your user stories in 
 ```
 
 ## User stories 1
-Pay careful attention to structure the user stories as we discussed in CYBR8470. Specifically, submit your user stories using the following template. Include them directly on your GitHub repo README.md file.
-
- **As a **user/role**, I want **goal** so that **rationale**.**
 
 As a busy employee who has to extra work after the normal working time, I want increase my health condition by watching some professional video of indoor execises with lower cost and spend less time, so that I will not stay in the suboptimal health condition or even protect myself from diseases.  
 
@@ -85,6 +82,14 @@ As a fitness fanatic, I want to measure my heart rate after I have done intensiv
 **Acceptance Criteria:**
 * A fitness fanatic uses HealthCare mobile app to measure heart rate after exercising, in case higher heart rate causes drained or injury. 
   * “Given I’m a fitness fanatic who likes to do intensive execise, and I download the HealthCare mobile app. When I have working out for a while, I can place my fingers on my     phone's camera and test my heart rate without wearing any physical detector. Then, I can decide if I need to do more exercise or not, so I don't get drained or injury."  
+
+## User stories 3
+
+As a cycling enthusiast, I want to calculate the mileage between two different locations and also know my current location at any time, so that I won't lose my way and get wrong direction to bicycle.
+
+**Acceptance Criteria:**
+* A cycling enthusiast uses HealthCare mobile app to get his/her current location on the earth and calculate the total cycling distance between the current position and final   destination, so he/she won't lose the direction.  
+  * “Given I’m a cycling enthusiast who likes to do long distance cycling, and I download the HealthCare mobile app. When I want to bicycle and haven't decide the destination     because I don't know how far I will do the cycling, I can open the HealthCare mobile app to get my current location and type in different destination addresses to select a     better direction to go with. Then, I will know how far I need to do cycling from my current address without losing my way."  
 
 
 
