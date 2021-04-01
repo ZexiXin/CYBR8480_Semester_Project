@@ -136,7 +136,9 @@ Your design should identify these high level components, but should also drill d
 
 
 ## High Level Design
-![HealthCare Design](./assets/design.png)
+![HealthCare Design](./assets/high_level_design_semester_project.svg)
+
+If you would like acess the larger view of the image, please click [this link to HealthCare Design](./assets/design.png)
 
 ## Component List
 ### Component 1 Name here
