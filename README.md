@@ -36,7 +36,7 @@ Thanks for technology, the contemporary people's life become very convenient and
 
 
 
-```markdown
+```
 As a **user/role**, I want to **goal** so I can **rationale**.
 
 For each user story, also define acceptance criteria.
@@ -69,10 +69,9 @@ As a cycling enthusiast, I want to calculate the mileage between two different l
   * “Given I’m a cycling enthusiast who likes to do long distance cycling, and I download the HealthCare mobile app. When I want to bicycle and haven't decide the destination     because I don't know how far I will do the cycling, I can open the HealthCare mobile app to get my current location and type in different destination addresses to select a     better direction to go with. Then, I will know how far I need to do cycling from my current address without losing my way."  
 
 
-
+```
 example:
 
-```markdown
 As a **smarthome automation enthusiast that likes to cook**, I want **my kitchen to automatically reorder my staple groceries for me when I am nearly out of them**, so that **I don't have to spend time filling the grocery shopping cart**.
 ```
 
@@ -90,10 +89,10 @@ As a internet hacker who is a member in the dark web, I want to collect all of t
 **Mitigations:**
 * This HealthCare mobile app is actually access the users' location and some health records, but we purposely store personal inforamtion locally. In other words, all of the     information is not traveling through the internet, and only the person who has access to the actual phone can get those records.
 
+``` 
 example:
-```markdown
   As a **Russian intelligence officer tracking us military deployments**, I want **to steal user fitness and GPS data from US soldier's fitbits** so that **I can understand     their exercise patterns, trail usage, and daily schedules**.
-```
+
 
 As a **misuser/misuser-role**, I want **misuse goal** so that **bad rationale**.
 Under each misuser story, identify at least one way you will counter this misuse in your application design.
@@ -107,6 +106,7 @@ You can make use of the following markdown syntax to embed your misuser stories 
 
 ### Grading Criteria
 User stories and misuser stories will be graded as follows.
+```
 
 #### User stories
 | User stories  | Meets expectation (30-24) | Some Issues (23-15) | Does not meet expectations (14-0)|
@@ -122,6 +122,8 @@ User stories and misuser stories will be graded as follows.
 
 
 ## Design
+
+```
 Once you have a set of requirements, the next step is to think about how you want to create an application that meets those demands. This is design. You will need to come up with a design that meets your project requirements. Your design should be kept to the component/service level and need not be specified at lower levels of detail (e.g. class or code level). A design is only as effective as it is communicable. If your design is overcomplicated or difficult to describe, then it means that you may have a poor design. What I want to see is that you have a clear picture in mind for how you will make an app to meet your requirements.
 
 
@@ -129,6 +131,7 @@ Once you have a set of requirements, the next step is to think about how you wan
 You should **draw a picture of your overall application**. You may use any architecture style you wish, but I would recommend c4, read more at [https://c4model.com/](https://c4model.com/). The picture should identify the core components of your design and how they are connected. At a high level, there are three types of components you may need: `web services`, `mobile app(s)`, and `hardware devices` (e.g. IoT hardware). Web services are tools that (typically) deliver data to apps and maintain state across user sessions. They often also allow you to integrate your apps and devices with other apps, devices, and services. Mobile apps are what we have mainly focused on so far in this course. Hardware devices are sensors and actuators that sense or impact the world around them. Connections between components may exist over known protocols (bluetooth, http, etc) or may be internal to an app (e.g. function -> function in Android).
 
 Your design should identify these high level components, but should also drill down to identify what each of these high level components will do - for instance, your hardware device might need to read temperature, your mobile app may need to be able to login to a webservice, pull down the temperature data from Omaha, and then compare it to the temperature measured by your hardware device and create a graph of temperature over time. This might require several subcomponents. **Your design should list them out, writing 1-2 sentences to describe each one**.
+```
 
 **TL;DR**
 1) A picture that identifies components and their connections
@@ -136,12 +139,34 @@ Your design should identify these high level components, but should also drill d
 
 
 ## High Level Design
-![HealthCare Design](./assets/high_level_design.svg)
+![HealthCare Design](./assets/high_level_design_1.svg)
 
-**If you would like acess the larger view of the image, please click [this link to HealthCare Design](./assets/Design_1.png)**
+**If you would like acess the larger view of the image, please click [this link to HealthCare Design](./assets/design_2.png), or you can click the top image then check the "raw" resource.**
 
 ## Component List
-### Component 1 Name here
+### 1. Authentication Component
+User authentication mechanism will be provided while our customer wants to contact question services. It is using the Firebase Backend-as-a-Service (Baas) to process user's credential authorization. Individual can only access his/her own messages along with those response from customer support, so the privacy will be guaranteed.
+
+#### Sub-component 1.1 User Login
+Each existed user in the backend has to log in before they can directly send and check the commincating message between himseld/herseld with our client service. We are using HTTPS protocol to build the connection, and user's login is not complicated. Just provide their email address and personal chosen password (which should at least 6 characters).
+
+#### Sub-component 1.2 User Register
+If there is a new user that the backend has not stored his/her information, the mobile app will prompt this user to do a simple registration with nickname, email, and password.
+
+#### Sub-component 1.2 Cloud Firestone
+It is a database which is using JSON format or some secure ways to store all the user's credentials along with their questions. Every user's personal information will be managed by Google instead of the mobile app.  
+
+
+### 2. Mobile Local Features
+Component 2 description here
+
+#### Sub-component 2.1 name here
+Sub component description here
+
+#### Sub-component 2.2 name here
+Sub component description here
+
+### 3. Google Map Service
 Component description here
 
 #### Sub-component 1.1 name here
@@ -150,14 +175,17 @@ Sub component description here
 #### Sub-component 1.2 name here
 Sub component description here
 
-### Component 2 Name here
-Component 2 description here
+### 3. Video Accessing Service
+Component description here
 
-#### Sub-component 2.1 name here
+#### Sub-component 1.1 name here
 Sub component description here
 
-#### Sub-component 2.2 name here
+#### Sub-component 1.2 name here
 Sub component description here
+
+
+
 
 
 ### Grading Criteria
