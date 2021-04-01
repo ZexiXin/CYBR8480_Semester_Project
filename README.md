@@ -136,7 +136,7 @@ Your design should identify these high level components, but should also drill d
 
 
 ## High Level Design
-![HealthCare Design](./assets/high_level_design_semester_project.svg)
+![HealthCare Design](./assets/design.png)
 
 ## Component List
 ### Component 1 Name here
@@ -156,7 +156,7 @@ Sub component description here
 
 #### Sub-component 2.2 name here
 Sub component description here
-```
+
 
 ### Grading Criteria
 Your design will be evaluated as follows:
