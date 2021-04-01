@@ -18,23 +18,6 @@ Your project will include all of the following main elements:
 * [Demo](#demo) -  Show off your app and discuss your security tests in a presentation video
 * [Packaging and Release](#packaging-and-release) - Document your project
 
-**All materials will be submitted on canvas. You should create a GitHub repo and share the link to the repo as part of your submission on canvas.**
-
-## Executive Project Summary
-```markdown
-An executive summary should be evocative. It should capture a reader and make them want to be a part of your idea. You will write an executive summary that defines the    
-goals and objectives of your project in language that is easily readable and mental-image evoking. I (or anyone else) should be able to read your executive summary and
-instantly know a) what you are doing and b) why it is important. Executive summaries should be exciting and interesting. It is the first (and likely the only) chance for    
-you to engage your reader and, in a real world setting, would determine if your product gets funded. An executive summary does not need technical detail to describe   
-interesting functionality. You should mention your product by name without using phrases such as "the team", "the class", "the instructor", etc.
-```
-
-### Submission materials - You should submit a summary document (in markdown format) on your GitHub project repo. Call the file README.md and place it in the top-level directory of your GitHub project.
-    It should contain the following:
-    1. A problem statement identifying the problem your product addresses.
-    1. Project goals and objectives in a numbered or bulleted list that you will undertake to address the identified problem.
-    1. The merit of accomplishing the project goals and objectives in terms of how it helps end users, society, or particular industries/sectors.
-
 
 
 ### Project Name
@@ -51,12 +34,6 @@ Thanks for technology, the contemporary people's life become very convenient and
 * **Route calculator:** This will be used while user would like to do the outdoor execise like jogging, biking, or hiking. Our app will offer a trail calculator to help user realized what the distance he/she will spend on outdoor exercising and the movement route which can help him/her check if it satify their daily workout plan.  
 * 
 
-
-
-## Requirement Analysis
-Requirements are extremely important for conducting a successful project. Collecting requirements about an application means understanding what your end user is going to do with the product. To understand requirements user stories, misuser stories, use cases, and misuse cases are used to encapsulate and represent behavior.
-
-### Submission materials
 
 
 ```markdown
@@ -100,14 +77,18 @@ As a **smarthome automation enthusiast that likes to cook**, I want **my kitchen
 ```
 
 
+## Misuser stories 1 
+As a network eavesdropper who has experience on doing packets sniffing, I want to using some external tool to sniff user's personal information from HealthCare mobile app, so that I can use those users' info to blackmail them.
 
- 
-## Misuser stories  
-As a **misuser/misuser-role**, I want **misuse goal** so that **bad rationale**.
+**Mitigations:**
+* Instead of using insecure communication between mobile app and database, I will use a most developed backend like Firebase with NoSQL and Google Cloud Platform API. Hence,     the HealthCare mobile app's data will become very difficult to capture.
+* The HealthCare app will not collect the actual user's information except the name and email address during register phase. To be honest, when the user is asked to input        his/her name, we are not reconmend to put the user's real name into our system. In this case, even though eavesdropper can get the user's email, he/she doesn't know the        real name which can correspond with the email, so it increases the difficulty of blackmailing.  
 
-Also think about and define misuser stories. Misuser stories are nothing more than user stories, except for users seeking to abuse your app. Use the same format as above, except replace user with misuser and use the ```goal``` to define the misuse goal. I.e.
+## Misuser stories 2 
+As a internet hacker who is a member in the dark web, I want to collect all of the user's health records and location information from HealthCare mobile app, so that I can sell those information to someone who would like to pay me in the dark web.
 
-
+**Mitigations:**
+* This HealthCare mobile app is actually access the users' location and some health records, but we purposely store personal inforamtion locally. In other words, all of the     information is not traveling through the internet, and only the person who has access to the actual phone can get those records.
 
 example:
 ```markdown
@@ -219,7 +200,7 @@ Your security analysis will be graded as follows:
 
 
 ## Implementation
-Once you have your design and security analysis, you need to actually put it to use and build your app and hardware system. You should build both a mobile app and a small IoT application. It may optionally interact with web services - such as firebase or AWS - if that is entailed in your system requirements.
+Implementation has been submitted and please check the /lib/main file in this repo. 
 
 ### Submission Materials
 You will submit all of your code to GitHub. Code artifacts submitted after the due date will not be considered. Make sure to have all of your code and artifacts committed to your project repository.
