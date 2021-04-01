@@ -124,7 +124,6 @@ User stories and misuser stories will be graded as follows.
 ## Design
 Once you have a set of requirements, the next step is to think about how you want to create an application that meets those demands. This is design. You will need to come up with a design that meets your project requirements. Your design should be kept to the component/service level and need not be specified at lower levels of detail (e.g. class or code level). A design is only as effective as it is communicable. If your design is overcomplicated or difficult to describe, then it means that you may have a poor design. What I want to see is that you have a clear picture in mind for how you will make an app to meet your requirements.
 
-**Remember that you only have roughly 2 months to work on your product, so keep scope in mind**
 
 ### Submission materials
 You should **draw a picture of your overall application**. You may use any architecture style you wish, but I would recommend c4, read more at [https://c4model.com/](https://c4model.com/). The picture should identify the core components of your design and how they are connected. At a high level, there are three types of components you may need: `web services`, `mobile app(s)`, and `hardware devices` (e.g. IoT hardware). Web services are tools that (typically) deliver data to apps and maintain state across user sessions. They often also allow you to integrate your apps and devices with other apps, devices, and services. Mobile apps are what we have mainly focused on so far in this course. Hardware devices are sensors and actuators that sense or impact the world around them. Connections between components may exist over known protocols (bluetooth, http, etc) or may be internal to an app (e.g. function -> function in Android).
@@ -135,11 +134,9 @@ Your design should identify these high level components, but should also drill d
 1) A picture that identifies components and their connections
 2) a list of components with 1-2 sentences defining each one
 
-You can make use of the following markdown syntax to embed your design in your README.md file:
 
-```markdown
 ## High Level Design
-![Tooltip for visually disabled](./path-to-image-file.imgextension)
+![HealthCare Design](./assets/high_level_design_semester_project.svg)
 
 ## Component List
 ### Component 1 Name here
