@@ -206,15 +206,15 @@ Using your high level architecture diagram and component list, identify potentia
 
 You can make use of the following markdown syntax to embed your security analysis information in your README.md file:
 
-```markdown
+
 ## Security analysis
-Text describing high level diagram with red or other callouts identifying problem points or attacks.
-![Tooltip for visually disabled](./path-to-image-file.imgextension)
+The misuse case and its remedation of HealthCare app is mainly discussing the security level while hackers would like to do several attacks to get unauthorized access or escalate his privilege to retrieve user's location and login credentials.   
+![The Security Analysis of HealthCare APP](https://github.com/ZexiXin/CYBR8480_Semester_Project/blob/main/assets/security_analysis_CYBR8480.svg)
 
 | Component name | Category of vulnerability | Issue Description | Mitigation |
 |----------------|---------------------------|-------------------|------------|
 | Component 1 name | Privilege Escalation | This component exposes an interface to integrated webviews that might allow malicious javascript to read and modify protected data on the component that it shouldn't have access it. | Sandboxing techniques should encapsulate access permissions and capabilities for webviews individually to prevent privilege escalation.|
-```
+
 
 ### Grading Criteria
 Your security analysis will be graded as follows:
