@@ -158,31 +158,31 @@ It is a database which is using JSON format or some secure ways to store all the
 
 
 ### 2. Mobile Local Features
-Component 2 description here
+An user health record demo page will be provided. It is running localy and recording all kind of workout related data of the user. Such as, how many steps he/she has walked along with the consumption of calories. Additionally there is a timer to calculate how long does the user spend on exercising
 
 #### Sub-component 2.1 name here
-Sub component description here
+The hydration tracker has also been embedded in the local features. Users can put their daily dose of water ingestion into the app, so the app will help them to remember how many cups of water they have drunk in case dehydration  
 
 #### Sub-component 2.2 name here
-Sub component description here
+Heart rate detector has been designed for those users who would not like to wear a kind of senser to measure their heart rate. This local function is mainly taking advantage from camera image processing technology to detect users' heart rate. Just put two fingers under phones camera while running HealthCare app, users will know their current heart beat after working out. 
 
 ### 3. Google Map Service
-Component description here
+Google Map services is using the Google Cloud Platform as the backend to interact with HealthCare app. The HealthCare app will use a secure API to access Google's services like Map Direction, Map iOS, and Map Android. Users' data will protected by the security structure of Google.
 
 #### Sub-component 1.1 name here
-Sub component description here
+The HealthCare location tracker will access user's current location, since it is mainly designing for those users who like to hiking and bicycling. Thus, they will not lost their direction and can also realize if they have gone too far from their home. All those data will be processed by Google, so HealthCare will not collect any information from users.
 
 #### Sub-component 1.2 name here
-Sub component description here
+Distance measure function is very useful to give the general idea for those users who are always running or cycling too far away because it helps users calculate the total kilometers between two locations. Furthermore, it can shows the most fast path between two places, so users can bypass the heavy traffic while execising.  
 
 ### 3. Video Accessing Service
-Component description here
+HealthCare ought to provide some video demo to those users who would like to do the indoor execising or have no idea how to do some less workflow workout. Users can adjust the vplay speed of video and full screen it. 
 
 #### Sub-component 1.1 name here
-Sub component description here
+Searching other video is useful if users have their preference to watch or favorite youtuber trainer to follow, but they have to know the exact video id or link. This is a concern for users' privacy because HealthCare app will not use plain text to retrieve video from youtube, so it will not expose users' behaviours.
 
 #### Sub-component 1.2 name here
-Sub component description here
+Default video list is necessary, since some user's might not want to do some search on watch exercise demo. Therefore, HealthCare provides some basic workout video or even live channel, so users' could just warm up themselves and practice with those workout channels. 
 
 
 
