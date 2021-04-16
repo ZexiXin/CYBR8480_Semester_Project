@@ -198,14 +198,6 @@ Your design will be evaluated as follows:
 | Design quality | Design is clear, rational, and justifiable. | There are issues in the design that would limit or prevent product success. | Design is seriously deficient or unrealistic. |
 | Design complexity | Design is effective and not overly complex to meet the requirements. | Design is overcomplicated in areas. | Design is seriously limited by many over-complications. |
 
-## Security Analysis
-As you know, there are many problems that can arise in the design and implementation of an app. You should analyze your design, while considering your misuse cases, to identify problem points where security challenges might exist.
-
-### Submission materials
-Using your high level architecture diagram and component list, identify potential problem areas and how they might be mitigated. Draw arrows, circle areas, or use other callout methods to show how the security problems you identify connect to your systems architecture.
-
-You can make use of the following markdown syntax to embed your security analysis information in your README.md file:
-
 
 ## Security analysis
 The misuse case and its remedation of HealthCare app is mainly discussing the security level while hackers would like to do several attacks to get unauthorized access or escalate his privilege to retrieve user's location and login credentials.   
@@ -213,7 +205,11 @@ The misuse case and its remedation of HealthCare app is mainly discussing the se
 
 | Component name | Category of vulnerability | Issue Description | Mitigation |
 |----------------|---------------------------|-------------------|------------|
-| Component 1 name | Privilege Escalation | This component exposes an interface to integrated webviews that might allow malicious javascript to read and modify protected data on the component that it shouldn't have access it. | Sandboxing techniques should encapsulate access permissions and capabilities for webviews individually to prevent privilege escalation.|
+| Unauthorized Login | Spoofing | This component exposes an interface to integrated webviews that might allow malicious javascript to read and modify protected data on the component that it shouldn't have access it. | Sandboxing techniques should encapsulate access permissions and capabilities for webviews individually to prevent privilege escalation.|
+| Password Crack | Information Disclosure | | |
+| Password Sniffing | Information Disclosure | | |
+| Inject Script  | Tampering | | |
+| Unauthorized Location Access | Privilege Escalation | | |
 
 
 ### Grading Criteria
