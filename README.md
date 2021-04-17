@@ -127,9 +127,9 @@ The misuse case and its remediation of HealthCare app is mainly discussing the s
 | Unauthorized Login | Denial of Service | Without credential validating, anyone can query the server. Hence, this component could cause network paralysis and traffic latency, so that right users will not be able to login | Requiring of registration with user identity and password will restrict bad behaviors because the malicious user will expose themselves |
 | Password Crack | Information Disclosure & Spoofing | Weak password length and complexity will make cracking users' accounts in a simple way, so that hacker can use those cracked credentials to request other services without users' awareness’s | Password management policy will set a minimum length and require more complicated combination while users are creating their passcodes |
 | Password Sniffing | Information Disclosure & Spoofing | Hackers can capture the traffic between users and server while they are communicating each other to sniff passcode, so they could pretend as the right users | The Firebase backend, which is developed by Google, is using secure communication channel and complex encryption algorithm while it builds connection with users. Hence, it makes network capture become harder |
-| Inject Script | Tampering | Malicious users can target on user's route calculating function to provide wrong direction and distance by injecting script to the tamper with source code of the route calculator | Google provides a code monitor to |
-| Unauthorized Location Access | Privilege Escalation | | |
-| Example | Privilege Escalation | This component exposes an interface to integrated webviews that might allow malicious javascript to read and modify protected data on the component that it shouldn't have access it. | Sandboxing techniques should encapsulate access permissions and capabilities for webviews individually to prevent privilege escalation.|
+| Inject Script | Tampering | Malicious users can target on user's route calculating function to provide wrong direction and distance by injecting script to the tamper with the Google Map API key | Google provides a code log monitor to check analyze the traffic between itself and user to see if there is any unauthorized access to its API key and inform this to the project owner (developer) |
+| Unauthorized Location Access | Privilege Escalation |  | |
+
 
 ### Grading Criteria
 Your security analysis will be graded as follows:
