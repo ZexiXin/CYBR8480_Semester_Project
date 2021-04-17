@@ -159,19 +159,24 @@ Submit your slides by including them in your github repository. Upload a video t
 
 To run this app, you need to download this app into you local directory by click the "Code" button on the top right side in the main page of this repo, and click either "Open with GitHub Desktop" or "Download Zip". Here, if you select zip file to download, you need to unzip it order to run it. 
 
-![GitHub download](https://github.com/ZexiXin/CYBR8480_Semester_Project/tree/main/assets/github_download.PNG)
+![GitHub download](https://github.com/ZexiXin/CYBR8480_Semester_Project/blob/main/assets/github_download.PNG)
 
 Additionally, you need to download the Android Studio with several Plugin like flutter to check the code. For more installation, please visiting [here](https://flutter.dev/docs/get-started/install). In the previous link, it includes instructions of how to set up emulator and other required configurations of Android Studio for several different OS. 
 
-Next, if you want to run this app in the actual phone though USB, you have to install the appropriate USB driver enable the development option in your device. Please following with this [link for more detail (Note: this is just for Android devices)](https://developer.android.com/studio/run/oem-usb). For iOS, please visit this [Build and release an iOS app](https://flutter.dev/docs/deployment/ios)
+Next, if you want to run this app in the actual phone though USB, you have to install the appropriate USB driver enable the development option in your device. Please following with this [link for more detail (Note: this is just for Android devices)](https://developer.android.com/studio/run/oem-usb). For iOS, please visit this [Build and release an iOS app](https://flutter.dev/docs/deployment/ios)  
 
-**Hardware Requirement:** laptop, actual phones running on either iOS or Android, network cable or Wifi, USB cable
-**Software Requirement:** Android studio, Flutter plugin, USB devices driver
+**Hardware Requirement:** laptop, actual phones running on either iOS or Android, network cable or Wifi, USB cable  
+**Software Requirement:** Android studio, Flutter plugin, USB devices driver, Google Cloud Platform API (You have to create you own API to enable the GPS function), Firebase NoSQL backend
 
-While you are able to run this app in the emulator, you should see an UI similar to the image below:
-![Sample](UI_sample.PNG)
+While you are able to run this app in the emulator, you should see an UI similar to the image below:  
+![Sample](https://github.com/ZexiXin/CYBR8480_Semester_Project/blob/main/assets/UI_sample.PNG)
 
 
+**Note:** After set everything necessary for this app, if the Android Studio gives you an error message while you compile/build the app. You could try to run the command in the terminal
+```
+flutter clean
+```
+then try to rebuild the app on your device. The reason causes this is the file pubspec.yaml contains conflict class variables in different imported packages. 
 
 ### Submission materials
 For this submission, you should
