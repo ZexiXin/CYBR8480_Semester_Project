@@ -6,14 +6,14 @@ import 'chart.dart';
 import 'package:semeter_project_health_app/useddata.dart';
 
 
-class BloodPage extends StatefulWidget {
+class HeartBPM extends StatefulWidget {
   @override
-  BloodPageView createState() {
-    return BloodPageView();
+  HeartBPMView createState() {
+    return HeartBPMView();
   }
 }
 
-class BloodPageView extends State<BloodPage> {
+class HeartBPMView extends State<HeartBPM> {
   double _alpha = 0.3;
   bool _toggled = false;
   bool _processing = false;

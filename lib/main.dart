@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:semeter_project_health_app/home_screen.dart';
 import 'package:semeter_project_health_app/routemap/googlemap.dart';
 import 'package:semeter_project_health_app/videoplayer/youtube.dart';
-import 'bloodpressure/bloodview.dart';
+import 'package:semeter_project_health_app/heartrate/heartbeatpersec.dart';
 import 'health_list.dart';
 import 'login/auth.dart';
 import 'login/discussion.dart';
@@ -72,7 +72,7 @@ class TabBarApp extends StatelessWidget {
             children: <Widget> [
               new GoogleMapView(),
               new HomeScreen(),
-              new BloodApp(),
+              new HeartBPM(),
               new YoutubeApp(),
               new ChangeNotifierProvider(
                 create: (context) => ApplicationState(),
@@ -95,11 +95,11 @@ class CustomerApp extends StatelessWidget {
   }
 }
 
-class BloodApp extends StatelessWidget {
+class HeartApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: BloodPage(),
+      child: HeartBPM(),
     );
   }
 }
