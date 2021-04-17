@@ -1,5 +1,5 @@
 # CYBR8480 Semester Project
-A semester project regarding to healthy care records and instructions along with customer support service.
+A semester project regarding to health care records and instructions along with customer support service.
 
 ## Overview
 
@@ -13,13 +13,13 @@ A semester project regarding to healthy care records and instructions along with
   - Augment your design with security features to address vulnerabilities
 * [Implementation](#implementation) - Build your app
 * [Testing](#testing) - Develop and execute a testing plan
-* [Demo](#demo) -  Show off your app and discuss your security tests in a presentation video
+* [Demo](#demo) -  Show off your app and discuss your security tests in a presentation video
 * [Packaging and Release](#packaging-and-release) - Document your project
 
 
 
 ### Project Name
-HealthCare app makes us better
+HealthCare app makes us amazing
 
 #### Executive Summary - Problem statement text goes here
 
@@ -27,10 +27,10 @@ Thanks for technology, the contemporary people's life become very convenient and
 
 #### Project Goals
 * **User authentication mechanism:** We will provide an app user interface to allow our user to interact with our customer service. The privacy is guaranteed because every user can only access his own comments and our support service responses. In other words, individual users’ comment will not be exposed to everyone in our system.  
-* **Heart rate measurement:** To measure user's heart rate, our users don't need to purchase any other peripheral to test their heart rate after or before workout. Hence, it saves users expenditure. More speciffically, we use the image processing technique to detect the user's pulse by taking advantages from phone's camera.
-* **Video guide of exercise procedures:** Which is a video list to let user access their perfered video demo to refer while they have no idea how to do the exercise. Also, this video guide page can let user search specific video to fit in his/her perference even through that are not related to exercises. 
-* **Route calculator:** This will be used while user would like to do the outdoor execise like jogging, biking, or hiking. Our app will offer a trail calculator to help user realized what the distance he/she will spend on outdoor exercising and the movement route which can help him/her check if it satify their daily workout plan.   
-* **Workout recorder:** It works as a memrandum to record all the users' working out status. Such as, it will show a walking steps panel, a calories statistic data, execrising time, and instant heart rate. In addition, it gives instruction to suggest user about how many cups of water ought to drink based on analyzing user's current working out rate.   
+* **Heart rate measurement:** To measure user's heart rate, our users don't need to purchase any other peripheral to test their heart rate after or before workout. Hence, it saves users expenditure. More specifically, we use the image processing technique to detect the user's pulse by taking advantages from phone's camera.
+* **Video guide of exercise procedures:** Which is a video list to let user access their preferred video demo to refer while they have no idea how to do the exercise. Also, this video guide page can let user search specific video to fit in his/her preference even through that are not related to exercises. 
+* **Route calculator:** This will be used while user would like to do the outdoor exercise like jogging, biking, or hiking. Our app will offer a trail calculator to help user realized what the distance he/she will spend on outdoor exercising and the movement route which can help him/her check if it satisfy their daily workout plan.   
+* **Workout recorder:** It works as a memorandum to record all the users' working out status. Such as, it will show a walking steps panel, a calories statistic data, exercising time, and instant heart rate. In addition, it gives instruction to suggest user about how many cups of water ought to drink based on analyzing user's current working out rate.   
 
 ## User stories 1
 
@@ -46,7 +46,7 @@ As a fitness fanatic, I want to measure my heart rate after I have done intensiv
 
 **Acceptance Criteria:**
 * A fitness fanatic uses HealthCare mobile app to measure heart rate after exercising, in case higher heart rate causes drained or injury. 
-  * “Given I’m a fitness fanatic who likes to do intensive execise, and I download the HealthCare mobile app. When I have working out for a while, I can place my fingers on my     phone's camera and test my heart rate without wearing any physical detector. Then, I can decide if I need to do more exercise or not, so I don't get drained or injury."  
+  * “Given I’m a fitness fanatic who likes to do intensive exercise, and I download the HealthCare mobile app. When I have working out for a while, I can place my fingers on my     phone's camera and test my heart rate without wearing any physical detector. Then, I can decide if I need to do more exercise or not, so I don't get drained or injury."  
 
 ## User stories 3
 
@@ -59,17 +59,17 @@ As a cycling enthusiast, I want to calculate the mileage between two different l
 
 
 ## Misuser stories 1 
-As a network eavesdropper who has experience on doing packets sniffing, I want to using some external tool to sniff user's personal information from HealthCare mobile app, so that I can use those users' info to blackmail them.
+As a network eavesdropper who has experience on doing packets sniffing, I want to use some external tool to sniff user's personal information from HealthCare mobile app, so that I can use those users' info to blackmail them.
 
 **Mitigations:**
 * Instead of using insecure communication between mobile app and database, I will use a most developed backend like Firebase with NoSQL and Google Cloud Platform API. Hence,     the HealthCare mobile app's data will become very difficult to capture.
-* The HealthCare app will not collect the actual user's information except the name and email address during register phase. To be honest, when the user is asked to input        his/her name, we are not reconmend to put the user's real name into our system. In this case, even though eavesdropper can get the user's email, he/she doesn't know the        real name which can correspond with the email, so it increases the difficulty of blackmailing.  
+* The HealthCare app will not collect the actual user's information except the name and email address during register phase. To be honest, when the user is asked to input        his/her name, we are not recommended to put the user's real name into our system. In this case, even though eavesdropper can get the user's email, he/she doesn't know the        real name which can correspond with the email, so it increases the difficulty of blackmailing.  
 
 ## Misuser stories 2 
 As a internet hacker who is a member in the dark web, I want to collect all of the user's health records and location information from HealthCare mobile app, so that I can sell those information to someone who would like to pay me in the dark web.
 
 **Mitigations:**
-* This HealthCare mobile app is actually access the users' location and some health records, but we purposely store personal inforamtion locally. In other words, all of the     information is not traveling through the internet, and only the person who has access to the actual phone can get those records.
+* This HealthCare mobile app is actually accessing the users' location and some health records, but we purposely store personal inforamtion locally. In other words, all of the     information is not traveling through the internet, and only the person who has access to the actual phone can get those records.
 
 
 
@@ -83,7 +83,7 @@ As a internet hacker who is a member in the dark web, I want to collect all of t
 User authentication mechanism will be provided while our customer wants to contact question services. It is using the Firebase Backend-as-a-Service (Baas) to process user's credential authorization. Individual can only access his/her own messages along with those response from customer support, so the privacy will be guaranteed.
 
 #### Sub-component 1.1 User Login
-Each existed user in the backend has to log in before they can directly send and check the commincating message between himseld/herseld with our client service. We are using HTTPS protocol to build the connection, and user's login is not complicated. Just provide their email address and personal chosen password (which should at least 6 characters).
+Each existed user in the backend has to log in before they can directly send and check the communication message between himself/herself with our client service. We are using HTTPS protocol to build the connection, and user's login is not complicated. Just provide their email address and personal chosen password (which should at least 6 characters).
 
 #### Sub-component 1.2 User Register
 If there is a new user that the backend has not stored his/her information, the mobile app will prompt this user to do a simple registration with nickname, email, and password.
@@ -93,42 +93,42 @@ It is a database which is using JSON format or some secure ways to store all the
 
 
 ### 2. Mobile Local Features
-An user health record demo page will be provided. It is running localy and recording all kind of workout related data of the user. Such as, how many steps he/she has walked along with the consumption of calories. Additionally there is a timer to calculate how long does the user spend on exercising
+A user health record demo page will be provided. It is running locally and recording all kind of workout related data of the user. Such as, how many steps he/she has walked along with the consumption of calories. Additionally, there is a timer to calculate how long does the user spend on exercising
 
 #### Sub-component 2.1 name here
 The hydration tracker has also been embedded in the local features. Users can put their daily dose of water ingestion into the app, so the app will help them to remember how many cups of water they have drunk in case dehydration  
 
 #### Sub-component 2.2 name here
-Heart rate detector has been designed for those users who would not like to wear a kind of senser to measure their heart rate. This local function is mainly taking advantage from camera image processing technology to detect users' heart rate. Just put two fingers under phones camera while running HealthCare app, users will know their current heart beat after working out. 
+Heart rate detector has been designed for those users who would not like to wear a kind of senser to measure their heart rate. This local function is mainly taking advantage from camera image processing technology to detect users' heart rate. Just put two fingers under phones camera while running HealthCare app, users will know their current heartbeat after working out. 
 
 ### 3. Google Map Service
-Google Map services is using the Google Cloud Platform as the backend to interact with HealthCare app. The HealthCare app will use a secure API to access Google's services like Map Direction, Map iOS, and Map Android. Users' data will protected by the security structure of Google.
+Google Map services is using the Google Cloud Platform as the backend to interact with HealthCare app. The HealthCare app will use a secure API to access Google's services like Map Direction, Map iOS, and Map Android. Users' data will be protected by the security structure of Google.
 
 #### Sub-component 1.1 name here
-The HealthCare location tracker will access user's current location, since it is mainly designing for those users who like to hiking and bicycling. Thus, they will not lost their direction and can also realize if they have gone too far from their home. All those data will be processed by Google, so HealthCare will not collect any information from users.
+The HealthCare location tracker will access user's current location, since it is mainly designing for those users who like to hike and bicycle. Thus, they will not lose their direction and can also realize if they have gone too far from their home. All those data will be processed by Google, so HealthCare will not collect any information from users.
 
 #### Sub-component 1.2 name here
-Distance measure function is very useful to give the general idea for those users who are always running or cycling too far away because it helps users calculate the total kilometers between two locations. Furthermore, it can shows the most fast path between two places, so users can bypass the heavy traffic while execising.  
+Distance measure function is very useful to give the general idea for those users who are always running or cycling too far away because it helps users calculate the total kilometers between two locations. Furthermore, it can show the fastest path between two places, so users can bypass the heavy traffic while exercising.  
 
 ### 3. Video Accessing Service
-HealthCare ought to provide some video demo to those users who would like to do the indoor execising or have no idea how to do some less workflow workout. Users can adjust the vplay speed of video and full screen it. 
+HealthCare ought to provide some video demo to those users who would like to do the indoor exercising or have no idea how to do some less workflow workout. Users can adjust the play speed of video and full screen it. 
 
 #### Sub-component 1.1 name here
-Searching other video is useful if users have their preference to watch or favorite youtuber trainer to follow, but they have to know the exact video id or link. This is a concern for users' privacy because HealthCare app will not use plain text to retrieve video from youtube, so it will not expose users' behaviours.
+Searching other video is useful if users have their preference to watch or favorite youtuber trainer to follow, but they have to know the exact video id or link. This is a concern for users' privacy because HealthCare app will not use plain text to retrieve video from YouTube, so it will not expose users' behaviors.
 
 #### Sub-component 1.2 name here
-Default video list is necessary, since some user's might not want to do some search on watch exercise demo. Therefore, HealthCare provides some basic workout video or even live channel, so users' could just warm up themselves and practice with those workout channels. 
+Default video list is necessary, since some users might not want to do some search on watch exercise demo. Therefore, HealthCare provides some basic workout video or even live channel, so users could just warm up themselves and practice with those workout channels. 
 
 
 ## Security analysis
-The misuse case and its remedation of HealthCare app is mainly discussing the security level while hackers would like to do several attacks to get unauthorized access or escalate his privilege to retrieve user's location and login credentials.   
+The misuse case and its remediation of HealthCare app is mainly discussing the security level while hackers would like to do several attacks to get unauthorized access or escalate his privilege to retrieve user's location and login credentials.   
 ![The Security Analysis of HealthCare APP](https://github.com/ZexiXin/CYBR8480_Semester_Project/blob/main/assets/security_analysis_CYBR8480.svg)
 
 | Component name | Category of vulnerability | Issue Description | Mitigation |
 |----------------|---------------------------|-------------------|------------|
-| Unauthorized Login | Denial of Service | Without credential validating, anyone can query the server. Hence, this component could cause network paralysis and traffic latency, so that customer support service will not be available | Requiring of registration with user identity and password will restrict bad bahaviours because the malicious user will expose themselves |
-| Password Crack | Information Disclosure | Weak password length and complexity will make cracking users' accounts in a simple way | Password management policy will set a minimun length and require more complicated combination while users are creating their passcodes |
-| Password Sniffing | Information Disclosure | Hacker can captrue the traffic between users and server while they are communicate each other to sniff passcode | The Firebase backend, which is developed by Google, is using secure communication channel and complex encryption algorithm while it builts connection with users. Hence, it makes network capture become harder |
+| Unauthorized Login | Denial of Service | Without credential validating, anyone can query the server. Hence, this component could cause network paralysis and traffic latency, so that right users will not be able to login | Requiring of registration with user identity and password will restrict bad behaviors because the malicious user will expose themselves |
+| Password Crack | Information Disclosure & Spoofing | Weak password length and complexity will make cracking users' accounts in a simple way, so that hacker can use those cracked credentials to request other services without users' awareness’s | Password management policy will set a minimum length and require more complicated combination while users are creating their passcodes |
+| Password Sniffing | Information Disclosure & Spoofing | Hackers can capture the traffic between users and server while they are communicating each other to sniff passcode, so they could pretend as the right users | The Firebase backend, which is developed by Google, is using secure communication channel and complex encryption algorithm while it builds connection with users. Hence, it makes network capture become harder |
 | Inject Script  | Tampering | | |
 | Unauthorized Location Access | Privilege Escalation | | |
 | Example | Privilege Escalation | This component exposes an interface to integrated webviews that might allow malicious javascript to read and modify protected data on the component that it shouldn't have access it. | Sandboxing techniques should encapsulate access permissions and capabilities for webviews individually to prevent privilege escalation.|
