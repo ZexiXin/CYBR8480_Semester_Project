@@ -7,25 +7,33 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:semeter_project_health_app/bloodpressure/bloodview.dart';
 
 import 'package:semeter_project_health_app/main.dart';
 import 'package:semeter_project_health_app/routemap/googlemap.dart';
+import 'package:semeter_project_health_app/useddata.dart';
+
+
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  testWidgets('Heart rate tester', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(GoogleMapView());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    BloodPageView blood = BloodPage().createState();
+    expect("1",equals(blood.tempbpm.value));
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+    blood.tempbpm = BPM(bpm: 20);
+    expect("20", equals(blood.tempbpm.value));
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    /*await tester.tap(find
+        .byIcon(Icons.favorite_border)
+        .first);*/
+
+    //expect(find.byIcon(Icons.favorite), findsOneWidget);
+
+    //expect(find.text("Show Route"), findsOneWidget);
+   // expect(find.text('1'), findsNothing);
+    
+   
   });
 }

@@ -279,7 +279,7 @@ class _RegisterFormState extends State<RegisterForm> {
                   child: TextFormField(
                     controller: _displayNameController,
                     decoration: const InputDecoration(
-                      hintText: 'First & last name',
+                      hintText: 'Nickname Prefered (or 1st Name Only)',
                     ),
                     validator: (value) {
                       if (value.isEmpty) {

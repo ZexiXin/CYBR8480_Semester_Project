@@ -44,6 +44,7 @@ class _MapViewState extends State<MapView> {
   Map<PolylineId, Polyline> polylines = {};
   List<LatLng> polylineCoordinates = [];
 
+
   final _scaffoldKey = GlobalKey<ScaffoldState>();
 
   Widget _textField({

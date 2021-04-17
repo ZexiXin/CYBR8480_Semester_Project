@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:semeter_project_health_app/home_screen.dart';
 import 'package:semeter_project_health_app/routemap/googlemap.dart';
-import 'package:semeter_project_health_app/videoplayer/video.dart';
 import 'package:semeter_project_health_app/videoplayer/youtube.dart';
 import 'bloodpressure/bloodview.dart';
 import 'health_list.dart';
@@ -62,7 +61,7 @@ class TabBarApp extends StatelessWidget {
             child:TabBar(
               tabs: <Widget>[
                 Tab(icon: Icon(Icons.add_location_alt)),
-                Tab(icon: Icon(Icons.format_list_bulleted)),
+                Tab(icon: Icon(Icons.upload_file)),
                 Tab(icon: Icon(Icons.favorite)),
                 Tab(icon: Icon(Icons.fitness_center_outlined)),
                 Tab(icon: Icon(Icons.help)),
@@ -72,15 +71,7 @@ class TabBarApp extends StatelessWidget {
           body: TabBarView(
             children: <Widget> [
               new GoogleMapView(),
-              new TodosScreen(
-                  todos: List.generate(
-                    20,
-                        (i) => Todo(
-                      'Exercise $i',
-                      'A description of what needs to be done for future $i',
-                    ),
-                  ),
-              ),
+              new HomeScreen(),
               new BloodApp(),
               new YoutubeApp(),
               new ChangeNotifierProvider(

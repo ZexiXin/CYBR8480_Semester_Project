@@ -34,14 +34,9 @@ class _YoutubePageState extends State<YoutubePage> {
 
   final List<String> _ids = [
     'gC_L9qAHVJ8',
-    'gQDByCdjUXw',
-    'iLnmTe5Q2Qw',
-    '_WoCV4c6XOE',
-    'KmzdUe0RSJo',
-    '6jZDSSZZxjQ',
-    'p2lYr3vM_1w',
-    '7QUtEmBT_-w',
-    '34_PXCzGw1M',
+    'iNW4lCU693Q',
+    'ml6cT4AZdqI',
+    'UoC_O3HzsH0',
   ];
 
   @override
@@ -94,7 +89,7 @@ class _YoutubePageState extends State<YoutubePage> {
     return YoutubePlayerBuilder(
       onExitFullScreen: () {
         // The player forces portraitUp after exiting fullscreen. This overrides the behaviour.
-        SystemChrome.setPreferredOrientations(DeviceOrientation.values);
+        // SystemChrome.setPreferredOrientations(DeviceOrientation.values);
       },
       player: YoutubePlayer(
         controller: _controller,
@@ -144,7 +139,7 @@ class _YoutubePageState extends State<YoutubePage> {
             ),
           ),
           title: const Text(
-            'Want Some Video Training?',
+            'More Videos? Click Here -->',
             style: TextStyle(color: Colors.white),
           ),
           actions: [
@@ -424,29 +419,3 @@ class _YoutubePageState extends State<YoutubePage> {
     );
   }
 }
-
-/*class YoutubePage extends StatelessWidget {
-  static String myVideoId = 'PQSagzssvUQ';
-  // the full url: https://www.youtube.com/watch?v=PQSagzssvUQ&ab_channel=NASA
-  // it's an interesting video from NASA on Youtube
-
-  // Initiate the Youtube player controller
-  YoutubePlayerController _controller = YoutubePlayerController(
-    initialVideoId: myVideoId,
-    flags: YoutubePlayerFlags(
-      autoPlay: true,
-      mute: false,
-    ),
-  );
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        body: Container(
-          child: YoutubePlayer(
-            controller: _controller,
-            liveUIColor: Colors.amber,
-          ),
-        ));
-  }
-}*/

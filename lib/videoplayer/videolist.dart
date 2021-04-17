@@ -10,14 +10,14 @@ class VideoList extends StatefulWidget {
 
 class _VideoListState extends State<VideoList> {
   final List<YoutubePlayerController> _controllers = [
-    'gQDByCdjUXw',
-    'iLnmTe5Q2Qw',
-    '_WoCV4c6XOE',
-    'KmzdUe0RSJo',
-    '6jZDSSZZxjQ',
-    'p2lYr3vM_1w',
-    '7QUtEmBT_-w',
-    '34_PXCzGw1M',
+    'V7cdJ9-T6CM',
+    '1bjKpgrbm6o',
+    'CIxNJbit9BA',
+    'MznqHWzCv8s',
+    'UBMk30rjy0o',
+    'Tz9d7By2ytQ',
+    'hNeYTtM0PEo',
+    '8JpKOczCPHU',
   ]
       .map<YoutubePlayerController>(
         (videoId) => YoutubePlayerController(
@@ -33,7 +33,7 @@ class _VideoListState extends State<VideoList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Video List Demo'),
+        title: const Text('Just Warms Up'),
       ),
       body: ListView.separated(
         itemBuilder: (context, index) {
@@ -47,12 +47,39 @@ class _VideoListState extends State<VideoList> {
               ProgressBar(isExpanded: true),
               const SizedBox(width: 10.0),
               RemainingDuration(),
-              FullScreenButton(),
+              PlaybackSpeedButton(),
+              const SizedBox(width: 20.0),
             ],
           );
         },
         itemCount: _controllers.length,
-        separatorBuilder: (context, _) => const SizedBox(height: 10.0),
+        separatorBuilder: (context, index) => Padding(
+          padding: const EdgeInsets.all(16.0),
+            child: _text('Title is Not Avaliable', _controllers[1].metadata.title),
+            //const SizedBox(height: 50.0),
+        )
+      ),
+    );
+  }
+
+
+  Widget _text(String title, String value) {
+    return RichText(
+      text: TextSpan(
+        text: '$title : ',
+        style: const TextStyle(
+          color: Colors.blueAccent,
+          fontWeight: FontWeight.bold,
+        ),
+        children: [
+          TextSpan(
+            text: value ?? '',
+            style: const TextStyle(
+              color: Colors.blueAccent,
+              fontWeight: FontWeight.w300,
+            ),
+          ),
+        ],
       ),
     );
   }
