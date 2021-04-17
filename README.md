@@ -120,29 +120,19 @@ Default video list is necessary, since some users might not want to do some sear
 
 ## Security analysis
 The misuse case and its remediation of HealthCare app is mainly discussing the security level while hackers would like to do several attacks to get unauthorized access or escalate his privilege to retrieve user's location and login credentials.   
-![The Security Analysis of HealthCare APP](https://github.com/ZexiXin/CYBR8480_Semester_Project/blob/main/assets/security_analysis_CYBR8480.svg)
+![The Security Analysis of HealthCare APP](https://github.com/ZexiXin/CYBR8480_Semester_Project/blob/main/assets/security_analysis_CYBR8480(1).svg)
 
 | Component name | Category of vulnerability | Issue Description | Mitigation |
 |----------------|---------------------------|-------------------|------------|
 | Unauthorized Login | Denial of Service | Without credential validating, anyone can query the server. Hence, this component could cause network paralysis and traffic latency, so that right users will not be able to login | Requiring of registration with user identity and password will restrict bad behaviors because the malicious user will expose themselves |
 | Password Crack | Information Disclosure & Spoofing | Weak password length and complexity will make cracking users' accounts in a simple way, so that hacker can use those cracked credentials to request other services without users' awareness’s | Password management policy will set a minimum length and require more complicated combination while users are creating their passcodes |
 | Password Sniffing | Information Disclosure & Spoofing | Hackers can capture the traffic between users and server while they are communicating each other to sniff passcode, so they could pretend as the right users | The Firebase backend, which is developed by Google, is using secure communication channel and complex encryption algorithm while it builds connection with users. Hence, it makes network capture become harder |
+| Unauthorized Location Access | Privilege Escalation | This component can expose user's location to let hackers steal their daily fitness and GPS data, so they can understand their exercise habits/hobbies and go ahead social engineering them | Google Cloud Platform not only provide the Map services, but also provides the restricted secure API key feature to the developer, so as long as hacker cannot get the key, they won't be able to access users' GPS data |
 | Inject Script | Tampering | Malicious users can target on user's route calculating function to provide wrong direction and distance by injecting script to the tamper with the Google Map API key | Google provides a code log monitor to check analyze the traffic between itself and user to see if there is any unauthorized access to its API key and inform this to the project owner (developer) |
-| Unauthorized Location Access | Privilege Escalation |  | |
-
-
-### Grading Criteria
-Your security analysis will be graded as follows:
-
-| | Meets expectations (15-12) | Some Issues (11-6) | Does not meet expectations (5-0)|
-|---|---|---|---|
-| Category and description| Category and description are appropriate and understandable. High level diagram is marked up in away that makes it easy to see where attacks target. | Some descriptions are unclear or missing. | Most or all descriptions are missing or unclear. |
-| Coverage and relevance | Identified problems are relevant to the project and cover most the important potential problem areas. | Some coverage or relevance is missing. | Many potential problem areas are not considered |
-| Mitigation Quality | Proposed mitigations are reasonable and appropriate | Some mitigations may not be feasible. | Many missing or non-sensical mitigations. |
 
 
 ## Implementation
-Implementation has been submitted and please check the /lib/main file in this repo. 
+Implementation has been submitted and please check the /lib/main file in this repo. Or for simple acess, please click [Here!](https://github.com/ZexiXin/CYBR8480_Semester_Project/lib/main)
 
 ### Submission Materials
 You will submit all of your code to GitHub. Code artifacts submitted after the due date will not be considered. Make sure to have all of your code and artifacts committed to your project repository.
@@ -157,8 +147,7 @@ You need to holistically test your app and system. Use unit tests, systems testi
 ### Submission Materials
 You will submit a testing plan document that describes what kinds of tests you performed and the results of your tests. This should be in the form of a table that describes your test, the criteria of evaluation you are using, the type of test performed, the results of the tests, and any actions taken to mitigate findings.
 
-### Grading Criteria
-TBA.
+
 
 ## Demo
 You will be expected to present your project to the class. You should prepare a 15-20 minute presentation that overviews your app and system, describes its requirement and design, demos its use, and overviews the testing you performed on the system.
@@ -166,8 +155,6 @@ You will be expected to present your project to the class. You should prepare a 
 ### Submission Materials
 Submit your slides by including them in your github repository. Upload a video to VidGrid and link it on your canvas submission and in the class-wide discussion thread.
 
-### Grading Criteria
-You will be graded by a rubric TBA.
 
 **Total 100 points.**
 
