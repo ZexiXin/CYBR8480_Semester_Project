@@ -3,14 +3,10 @@ A semester project regarding to health care records and instructions along with 
 
 ## Overview
 
-* [Executive Project Summary](#executive-project-summary) - What are you doing and why?
-* [Requirements Analysis](#requirements-analysis) - What does your app/product do and who does it serve?
-* [Design](#design) - How is the app going to be designed?
-  - Draw an architecture diagram of your proposed app
-  - Identify significant design challenges
-* [Security Analysis](#security-analysis) - Analyze your design and augment it to address weakenesses 
-  - Analyze your design for security vulnerabilities
-  - Augment your design with security features to address vulnerabilities
+* [Executive Project Summary](#project-name)
+* [Requirements Analysis](#requirements-analysis)
+* [Design](#design)
+* [Security Analysis](#security-analysis)
 * [Implementation](#implementation) - Build your app
 * [Testing](#testing) - Develop and execute a testing plan
 * [Demo](#demo) -  Show off your app and discuss your security tests in a presentation video
@@ -32,7 +28,8 @@ Thanks for technology, the contemporary people's life become very convenient and
 * **Route calculator:** This will be used while user would like to do the outdoor exercise like jogging, biking, or hiking. Our app will offer a trail calculator to help user realized what the distance he/she will spend on outdoor exercising and the movement route which can help him/her check if it satisfy their daily workout plan.   
 * **Workout recorder:** It works as a memorandum to record all the users' working out status. Such as, it will show a walking steps panel, a calories statistic data, exercising time, and instant heart rate. In addition, it gives instruction to suggest user about how many cups of water ought to drink based on analyzing user's current working out rate.   
 
-## User stories 1
+### Requirements-analysis
+#### User stories 1
 
 As a busy employee who has to extra work after the normal working time, I want increase my health condition by watching some professional video of indoor execises with lower cost and spend less time, so that I will not stay in the suboptimal health condition or even protect myself from diseases.  
 
@@ -40,7 +37,7 @@ As a busy employee who has to extra work after the normal working time, I want i
 * A busy employee uses HealthCare mobile app to do indoor workout  
   * “Given I’m a busy employee who doesn't have time to find personal trainer to teach him/her about how to do indoor exercise, and I download the HealthCare mobile app. When     I open the HealthCare mobile app on my phone, and I am able to find some short indoor exercise videos that are recorded by professional coach. Then, I can spend less time     on workout to stay healthy."  
 
-## User stories 2
+#### User stories 2
 
 As a fitness fanatic, I want to measure my heart rate after I have done intensive exercise in the gym without using a wearable detector, so that I will not working out too hard to cause me drained or injury.
 
@@ -48,7 +45,7 @@ As a fitness fanatic, I want to measure my heart rate after I have done intensiv
 * A fitness fanatic uses HealthCare mobile app to measure heart rate after exercising, in case higher heart rate causes drained or injury. 
   * “Given I’m a fitness fanatic who likes to do intensive exercise, and I download the HealthCare mobile app. When I have working out for a while, I can place my fingers on my     phone's camera and test my heart rate without wearing any physical detector. Then, I can decide if I need to do more exercise or not, so I don't get drained or injury."  
 
-## User stories 3
+#### User stories 3
 
 As a cycling enthusiast, I want to calculate the mileage between two different locations and also know my current location at any time, so that I won't lose my way and get wrong direction to bicycle.
 
@@ -58,14 +55,14 @@ As a cycling enthusiast, I want to calculate the mileage between two different l
 
 
 
-## Misuser stories 1 
+#### Misuser stories 1 
 As a network eavesdropper who has experience on doing packets sniffing, I want to use some external tool to sniff user's personal information from HealthCare mobile app, so that I can use those users' info to blackmail them.
 
 **Mitigations:**
 * Instead of using insecure communication between mobile app and database, I will use a most developed backend like Firebase with NoSQL and Google Cloud Platform API. Hence,     the HealthCare mobile app's data will become very difficult to capture.
 * The HealthCare app will not collect the actual user's information except the name and email address during register phase. To be honest, when the user is asked to input        his/her name, we are not recommended to put the user's real name into our system. In this case, even though eavesdropper can get the user's email, he/she doesn't know the        real name which can correspond with the email, so it increases the difficulty of blackmailing.  
 
-## Misuser stories 2 
+#### Misuser stories 2 
 As a internet hacker who is a member in the dark web, I want to collect all of the user's health records and location information from HealthCare mobile app, so that I can sell those information to someone who would like to pay me in the dark web.
 
 **Mitigations:**
@@ -73,8 +70,9 @@ As a internet hacker who is a member in the dark web, I want to collect all of t
 
 
 
-## Design - High Level Design
-![HealthCare Design](./assets/high_level_design_1.svg)
+### Design
+
+![High Level Design of HealthCare App](./assets/high_level_design_1.svg)
 
 **If you would like acess the larger view of the image, please click [this link to HealthCare Design](./assets/design_2.png), or you can click the top image then check the "raw" resource.**
 
@@ -129,7 +127,7 @@ The misuse case and its remediation of HealthCare app is mainly discussing the s
 | Unauthorized Login | Denial of Service | Without credential validating, anyone can query the server. Hence, this component could cause network paralysis and traffic latency, so that right users will not be able to login | Requiring of registration with user identity and password will restrict bad behaviors because the malicious user will expose themselves |
 | Password Crack | Information Disclosure & Spoofing | Weak password length and complexity will make cracking users' accounts in a simple way, so that hacker can use those cracked credentials to request other services without users' awareness’s | Password management policy will set a minimum length and require more complicated combination while users are creating their passcodes |
 | Password Sniffing | Information Disclosure & Spoofing | Hackers can capture the traffic between users and server while they are communicating each other to sniff passcode, so they could pretend as the right users | The Firebase backend, which is developed by Google, is using secure communication channel and complex encryption algorithm while it builds connection with users. Hence, it makes network capture become harder |
-| Inject Script  | Tampering | | |
+| Inject Script | Tampering | Malicious users can target on user's route calculating function to provide wrong direction and distance by injecting script to the tamper with source code of the route calculator | Google provides a code monitor to |
 | Unauthorized Location Access | Privilege Escalation | | |
 | Example | Privilege Escalation | This component exposes an interface to integrated webviews that might allow malicious javascript to read and modify protected data on the component that it shouldn't have access it. | Sandboxing techniques should encapsulate access permissions and capabilities for webviews individually to prevent privilege escalation.|
 
