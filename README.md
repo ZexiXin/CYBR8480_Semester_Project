@@ -1,9 +1,7 @@
 # CYBR8480 Semester Project
-A semester project regarding to healthy care records
+A semester project regarding to healthy care records and instructions along with customer support service.
 
 ## Overview
-
-Your project will include all of the following main elements:  
 
 * [Executive Project Summary](#executive-project-summary) - What are you doing and why?
 * [Requirements Analysis](#requirements-analysis) - What does your app/product do and who does it serve?
@@ -31,18 +29,8 @@ Thanks for technology, the contemporary people's life become very convenient and
 * **User authentication mechanism:** We will provide an app user interface to allow our user to interact with our customer service. The privacy is guaranteed because every user can only access his own comments and our support service responses. In other words, individual users’ comment will not be exposed to everyone in our system.  
 * **Heart rate measurement:** To measure user's heart rate, our users don't need to purchase any other peripheral to test their heart rate after or before workout. Hence, it saves users expenditure. More speciffically, we use the image processing technique to detect the user's pulse by taking advantages from phone's camera.
 * **Video guide of exercise procedures:** Which is a video list to let user access their perfered video demo to refer while they have no idea how to do the exercise. Also, this video guide page can let user search specific video to fit in his/her perference even through that are not related to exercises. 
-* **Route calculator:** This will be used while user would like to do the outdoor execise like jogging, biking, or hiking. Our app will offer a trail calculator to help user realized what the distance he/she will spend on outdoor exercising and the movement route which can help him/her check if it satify their daily workout plan.  
-* 
-
-
-
-```
-As a **user/role**, I want to **goal** so I can **rationale**.
-
-For each user story, also define acceptance criteria.
-Your acceptance criteria should define the set of things required to understand when you are done with the user story.
-You can make use of the following markdown syntax to embed your user stories in your README.md file:
-```
+* **Route calculator:** This will be used while user would like to do the outdoor execise like jogging, biking, or hiking. Our app will offer a trail calculator to help user realized what the distance he/she will spend on outdoor exercising and the movement route which can help him/her check if it satify their daily workout plan.   
+* **Workout recorder:** It works as a memrandum to record all the users' working out status. Such as, it will show a walking steps panel, a calories statistic data, execrising time, and instant heart rate. In addition, it gives instruction to suggest user about how many cups of water ought to drink based on analyzing user's current working out rate.   
 
 ## User stories 1
 
@@ -69,12 +57,6 @@ As a cycling enthusiast, I want to calculate the mileage between two different l
   * “Given I’m a cycling enthusiast who likes to do long distance cycling, and I download the HealthCare mobile app. When I want to bicycle and haven't decide the destination     because I don't know how far I will do the cycling, I can open the HealthCare mobile app to get my current location and type in different destination addresses to select a     better direction to go with. Then, I will know how far I need to do cycling from my current address without losing my way."  
 
 
-```
-example:
-
-As a **smarthome automation enthusiast that likes to cook**, I want **my kitchen to automatically reorder my staple groceries for me when I am nearly out of them**, so that **I don't have to spend time filling the grocery shopping cart**.
-```
-
 
 ## Misuser stories 1 
 As a network eavesdropper who has experience on doing packets sniffing, I want to using some external tool to sniff user's personal information from HealthCare mobile app, so that I can use those users' info to blackmail them.
@@ -89,56 +71,9 @@ As a internet hacker who is a member in the dark web, I want to collect all of t
 **Mitigations:**
 * This HealthCare mobile app is actually access the users' location and some health records, but we purposely store personal inforamtion locally. In other words, all of the     information is not traveling through the internet, and only the person who has access to the actual phone can get those records.
 
-``` 
-example:
-  As a **Russian intelligence officer tracking us military deployments**, I want **to steal user fitness and GPS data from US soldier's fitbits** so that **I can understand     their exercise patterns, trail usage, and daily schedules**.
 
 
-As a **misuser/misuser-role**, I want **misuse goal** so that **bad rationale**.
-Under each misuser story, identify at least one way you will counter this misuse in your application design.
-You can make use of the following markdown syntax to embed your misuser stories in your README.md file:
-
-**Mitigations:**
-* Mitigation technique 1 to be used goes here
-* Mitigation technique 2 to be used goes here
-* etc
-* 
-
-### Grading Criteria
-User stories and misuser stories will be graded as follows.
-```
-
-#### User stories
-| User stories  | Meets expectation (30-24) | Some Issues (23-15) | Does not meet expectations (14-0)|
-|---|---|---|---|
-| Stated correctly | The user stories each identify a user role, goal, and rationale that dictate a user's behavior in the product to be created. | Roles, goals, or rationales are missing. | Many issues with role, goal, and/or rationale identification |
-| Acceptance Criteria | The user stories are reasonable, well thought out, and define a set of acceptance criteria that dictate when the story is satisfied. | Some criteria are ill defined or ambiguous. Not enough criteria defined. | Many ill-defined or missing criteria.|
-
-#### Misuser stories
-| Misuser stories | Meets expectations (30-24) | Some Issues (23-15) | Does not meet expectations (14-0)|
-|---|---|---|---|
-| Stated correctly | The misuser stories each identify a user type, goal, and rationale that dictates a potential misuser behavior in the product to be created. |Roles, goals, or rationales are missing. | Many issues with role, goal, and/or rationale identification |
-| Mitigation | The misuser stories are reasonable, well thought out, and each have a mitigation plan that dictates how the story will be thwarted. | Mitigation is ill defined or ambiguous. | Mitigation is extremely ill-defined, poorly thought out, and/or unrealistic.|
-
-
-## Design
-
-```
-Once you have a set of requirements, the next step is to think about how you want to create an application that meets those demands. This is design. You will need to come up with a design that meets your project requirements. Your design should be kept to the component/service level and need not be specified at lower levels of detail (e.g. class or code level). A design is only as effective as it is communicable. If your design is overcomplicated or difficult to describe, then it means that you may have a poor design. What I want to see is that you have a clear picture in mind for how you will make an app to meet your requirements.
-
-
-### Submission materials
-You should **draw a picture of your overall application**. You may use any architecture style you wish, but I would recommend c4, read more at [https://c4model.com/](https://c4model.com/). The picture should identify the core components of your design and how they are connected. At a high level, there are three types of components you may need: `web services`, `mobile app(s)`, and `hardware devices` (e.g. IoT hardware). Web services are tools that (typically) deliver data to apps and maintain state across user sessions. They often also allow you to integrate your apps and devices with other apps, devices, and services. Mobile apps are what we have mainly focused on so far in this course. Hardware devices are sensors and actuators that sense or impact the world around them. Connections between components may exist over known protocols (bluetooth, http, etc) or may be internal to an app (e.g. function -> function in Android).
-
-Your design should identify these high level components, but should also drill down to identify what each of these high level components will do - for instance, your hardware device might need to read temperature, your mobile app may need to be able to login to a webservice, pull down the temperature data from Omaha, and then compare it to the temperature measured by your hardware device and create a graph of temperature over time. This might require several subcomponents. **Your design should list them out, writing 1-2 sentences to describe each one**.
-```
-
-**TL;DR**
-1) A picture that identifies components and their connections
-2) a list of components with 1-2 sentences defining each one
-
-
-## High Level Design
+## Design - High Level Design
 ![HealthCare Design](./assets/high_level_design_1.svg)
 
 **If you would like acess the larger view of the image, please click [this link to HealthCare Design](./assets/design_2.png), or you can click the top image then check the "raw" resource.**
@@ -185,32 +120,18 @@ Searching other video is useful if users have their preference to watch or favor
 Default video list is necessary, since some user's might not want to do some search on watch exercise demo. Therefore, HealthCare provides some basic workout video or even live channel, so users' could just warm up themselves and practice with those workout channels. 
 
 
-
-
-
-### Grading Criteria
-Your design will be evaluated as follows:
-
-| | Meets expectations (15-12) | Some Issues (11-6) | Does not meet expectations (5-0)|
-|---|---|---|---|
-| Overviews big picture of components | Clear effective graphical depiction (picture) of your high level design. | Missing high level components in design. | No or poor high level picture. |
-| Component / Sub-component list | Each major component in your app is listed with 1-2 sentences describing its functionality. | Some components are not described or descriptions are unclear. | Many missing or poor component descriptions. |
-| Design quality | Design is clear, rational, and justifiable. | There are issues in the design that would limit or prevent product success. | Design is seriously deficient or unrealistic. |
-| Design complexity | Design is effective and not overly complex to meet the requirements. | Design is overcomplicated in areas. | Design is seriously limited by many over-complications. |
-
-
 ## Security analysis
 The misuse case and its remedation of HealthCare app is mainly discussing the security level while hackers would like to do several attacks to get unauthorized access or escalate his privilege to retrieve user's location and login credentials.   
 ![The Security Analysis of HealthCare APP](https://github.com/ZexiXin/CYBR8480_Semester_Project/blob/main/assets/security_analysis_CYBR8480.svg)
 
 | Component name | Category of vulnerability | Issue Description | Mitigation |
 |----------------|---------------------------|-------------------|------------|
-| Unauthorized Login | Spoofing | This component exposes an interface to integrated webviews that might allow malicious javascript to read and modify protected data on the component that it shouldn't have access it. | Sandboxing techniques should encapsulate access permissions and capabilities for webviews individually to prevent privilege escalation.|
-| Password Crack | Information Disclosure | | |
-| Password Sniffing | Information Disclosure | | |
+| Unauthorized Login | Denial of Service | Without credential validating, anyone can query the server. Hence, this component could cause network paralysis and traffic latency, so that customer support service will not be available | Requiring of registration with user identity and password will restrict bad bahaviours because the malicious user will expose themselves |
+| Password Crack | Information Disclosure | Weak password length and complexity will make cracking users' accounts in a simple way | Password management policy will set a minimun length and require more complicated combination while users are creating their passcodes |
+| Password Sniffing | Information Disclosure | Hacker can captrue the traffic between users and server while they are communicate each other to sniff passcode | The Firebase backend, which is developed by Google, is using secure communication channel and complex encryption algorithm while it builts connection with users. Hence, it makes network capture become harder |
 | Inject Script  | Tampering | | |
 | Unauthorized Location Access | Privilege Escalation | | |
-
+| Example | Privilege Escalation | This component exposes an interface to integrated webviews that might allow malicious javascript to read and modify protected data on the component that it shouldn't have access it. | Sandboxing techniques should encapsulate access permissions and capabilities for webviews individually to prevent privilege escalation.|
 
 ### Grading Criteria
 Your security analysis will be graded as follows:
