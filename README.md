@@ -139,7 +139,12 @@ Your implementation quality will be assessed by the degree of maturity and the d
 
 **Total 150 points.**
 ## Testing
-You need to holistically test your app and system. Use unit tests, systems testing methods, and network/protocol analysis as needed to test your system.
+I will use the flutter Unit test to evalute if the HealthApp can pass those test. In general, I will test some values inside of each function to see if those have been changed after one widget has been pumped. 
+
+
+| Test Function | Test result | Need further modification |
+|---------------| ------------| --------------------------|
+| HeartRate ||
 
 ### Submission Materials
 You will submit a testing plan document that describes what kinds of tests you performed and the results of your tests. This should be in the form of a table that describes your test, the criteria of evaluation you are using, the type of test performed, the results of the tests, and any actions taken to mitigate findings.
@@ -148,6 +153,9 @@ You will submit a testing plan document that describes what kinds of tests you p
 
 ## Demo
 You will be expected to present your project to the class. You should prepare a 15-20 minute presentation that overviews your app and system, describes its requirement and design, demos its use, and overviews the testing you performed on the system.
+
+The video demo is here
+The slide can be viewed from here
 
 ### Submission Materials
 Submit your slides by including them in your github repository. Upload a video to VidGrid and link it on your canvas submission and in the class-wide discussion thread.
