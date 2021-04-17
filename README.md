@@ -134,21 +134,17 @@ The misuse case and its remediation of HealthCare app is mainly discussing the s
 Implementation has been submitted and please check the /lib/main file in this repo. Or for simple acess, please click [Here!](https://github.com/ZexiXin/CYBR8480_Semester_Project/blob/main/lib/main.dart)
 
 
-### Grading Criteria
-Your implementation quality will be assessed by the degree of maturity and the degree of effort you have put into your product. There is no set rubric for this portion of the final milestone, but the instructor will review your code commits, the quality and quantity of functionality in your app, and holistically examine how well your app meets its requirements.
-
-**Total 150 points.**
 ## Testing
 I will use the flutter Unit test to evalute if the HealthApp can pass those test. In general, I will test some values inside of each function to see if those have been changed after one widget has been pumped. 
 
 
-| Test Function | Test result | Need further modification |
-|---------------| ------------| --------------------------|
-| HeartRate ||
-
-### Submission Materials
-You will submit a testing plan document that describes what kinds of tests you performed and the results of your tests. This should be in the form of a table that describes your test, the criteria of evaluation you are using, the type of test performed, the results of the tests, and any actions taken to mitigate findings.
-
+| Test Function | Criteria | Test result | Need further modification |
+| ------------- | -------- | ----------- | ------------------------- |
+| HeartRate | Tested the variable change and compare if it is equal to a expected value | passed | Not required at this stage |
+| Customer Service | Tested if a widget can be pumped and execute right funtion | test failed since it requires the MediaQuery which don't know what it is | Perfer to develop an chat windows between the customer and support services, also it is great to embed an AI representative while during the off time |
+| Google GPS | Tested if a widget can be pumped and execute right funtion | test failed since it requires the MediaQuery which don't know what it is | Adding keyword recommendation will be good for exercises to find a better destination to go |
+| Video demo | Test if the video can be played | have not test | Can add more video features |
+| Workout records | Test if those health records can be shown | have not test | Data can be dynamic for the next development phase |
 
 
 ## Demo
@@ -191,19 +187,6 @@ For this submission, you should
  * Package your code and/or deployment environment for release using [github](https://github.com/). (Optional) you may also use other potential deployment solutions such as Android play store, an APK distribution, [docker](https://www.docker.com/), etc in addition to github. 
  * Create a ```hardware/software requirements``` section in your github repository and list the hardware components, software, and other technology required to make your app work.
  * Create ```installation``` and ```getting started``` instructions using markdown in your repository to detail what an end-user must do to setup and use your product.
-
-### Grading Criteria
-| | Meets expectations (9-10) | Some Issues (6-8) | Does not meet expectations (0-5)|
-|---|---|---|---|
-|Hardware/Software Requirements| Includes a list of hardware and software requirements necessary for the instructions and usage of the product. | N/A | Does not list hardware/software requirements |
-
-| | Meets expectations (40-50) | Some Issues (25-39) | Does not meet expectations (0-24)|
-|---|---|---|---|
-|Installation Directions| Clear, complete instructions allow the would-be user to install and build your code.|Directions are missing elements, unclear, and/or incomplete. |Many issues with instructions not working or directions are overly incomplete|
-|Getting Started Directions|Clear, complete, and concise getting starting directions are provided to show would-be users how to use your app and product.|Getting started directions are not clear. It is not obvious how to use your app/product.|Minimal or no attempt to generate getting started documentation.|
-
-**Total 110 points.**
-
 
 
 #### License
