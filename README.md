@@ -7,11 +7,10 @@ A semester project regarding to health care records and instructions along with 
 * [Requirements Analysis](#requirements-analysis)
 * [Design](#design)
 * [Security Analysis](#security-analysis)
-* [Implementation](#implementation) - Build your app
-* [Testing](#testing) - Develop and execute a testing plan
-* [Demo](#demo) -  Show off your app and discuss your security tests in a presentation video
-* [Packaging and Release](#packaging-and-release) - Document your project
-
+* [Implementation](#implementation) 
+* [Testing](#testing)
+* [Demo](#demo)
+* [Packaging and Release](#packaging-and-release)
 
 
 ### Project Name
