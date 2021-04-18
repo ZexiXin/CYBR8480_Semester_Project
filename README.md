@@ -30,7 +30,7 @@ Thanks for technology, the contemporary people's life become very convenient and
 ### Requirements-analysis
 #### User stories 1
 
-As a busy employee who has to extra work after the normal working time, I want increase my health condition by watching some professional video of indoor execises with lower cost and spend less time, so that I will not stay in the suboptimal health condition or even protect myself from diseases.  
+As a busy employee who has to do extra work after the normal working time, I want increase my health condition by watching some professional video of indoor execises with lower cost and spend less time, so that I will not stay in the suboptimal health condition or even protect myself from diseases.  
 
 **Acceptance Criteria:**
 * A busy employee uses HealthCare mobile app to do indoor workout  
