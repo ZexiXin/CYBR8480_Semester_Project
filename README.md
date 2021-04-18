@@ -140,11 +140,11 @@ I will use the flutter Unit test to evalute if the HealthApp can pass those test
 
 | Test Function | Criteria | Test result | Need further modification |
 | ------------- | -------- | ----------- | ------------------------- |
-| HeartRate | Tested the variable change and compare if it is equal to a expected value | passed | Not required at this stage |
-| Customer Service | Tested if a widget can be pumped and execute right funtion | test failed since it requires the MediaQuery which don't know what it is | Perfer to develop an chat windows between the customer and support services, also it is great to embed an AI representative while during the off time |
-| Google GPS | Tested if a widget can be pumped and execute right funtion | test failed since it requires the MediaQuery which don't know what it is | Adding keyword recommendation will be good for exercises to find a better destination to go |
-| Video demo | Test if the video can be played | have not test | Can add more video features |
-| Workout records | Test if those health records can be shown | have not test | Data can be dynamic for the next development phase |
+| HeartRate | Tested the variable change and compare if it is equal to a expected value | correctly passed | Not required at this stage |
+| Customer Service | Tested if a widget can be pumped and execute right login and logout status | correctly passed | Perfer to develop an chat windows between the customer and support services, also it is great to embed an AI representative while during the off time |
+| Google GPS | Tested if wighets can retrieve the right data from cloud service and all widgets can be found | correctly passed | Adding keyword recommendation will be good for exercises to find a better destination to go |
+| Video demo | Test if the youtube video widgets, play button, and icon can be find by flutter tester | correctly passed | Can add more video features |
+| Workout records | Test if those health records can be shown | correcly passed | Data can be dynamic for the next development phase and the layout can be changed to fit in multiple devices screen |
 
 
 ## Demo
