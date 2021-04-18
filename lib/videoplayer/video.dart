@@ -7,11 +7,7 @@ import 'dart:async';
 class VideoPlayerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      //title: 'Video Player Demo',
-      home: VideoPlayerScreen(),
-    );
+    return  VideoPlayerScreen();
   }
 }
 

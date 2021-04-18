@@ -2,16 +2,13 @@ import 'dart:developer';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:semeter_project_health_app/videoplayer/videolist.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class YoutubeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: YoutubePage(),
-    );
+    return  YoutubePage();
   }
 }
 

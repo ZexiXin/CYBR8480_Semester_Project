@@ -6,6 +6,10 @@ class Chart extends StatelessWidget {
 
   Chart(this._data);
 
+  List<SensorValue> get data {
+    return _data;
+  }
+
   @override
   Widget build(BuildContext context) {
     return new charts.TimeSeriesChart([

@@ -10,9 +10,7 @@ import 'package:semeter_project_health_app/routemap/secrets.dart';
 class GoogleMapView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: MapView(),
-    );
+    return MapView();
   }
 }
 
@@ -449,6 +447,7 @@ class _MapViewState extends State<MapView> {
                             ),
                           ),
                           SizedBox(height: 5),
+                          // ignore: deprecated_member_use
                           RaisedButton(
                             onPressed: (_startAddress != '' && _destinationAddress != '')
                                 ? () async {

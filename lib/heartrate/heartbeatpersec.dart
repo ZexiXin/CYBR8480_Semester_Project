@@ -22,6 +22,13 @@ class HeartBPMView extends State<HeartBPM> {
   int _bpm = 0;
   var tempbpm = BPM(bpm: 1);
 
+  bool get process {
+    return _processing;
+  }
+  bool get tog {
+    return _toggled;
+  }
+
   Future<void> _initController() async {
     try {
       List _cameras = await availableCameras();

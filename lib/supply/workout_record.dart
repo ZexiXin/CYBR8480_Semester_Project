@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:semeter_project_health_app/supply/hydration_screen.dart';
+import 'package:semeter_project_health_app/supply/tile.dart';
 import 'package:semeter_project_health_app/useddata.dart';
-import 'supply/tile.dart';
+
 
 
 const kTileDefaultBackgroundColor = Colors.white;
@@ -22,14 +23,15 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SafeArea(
         child:SafeArea(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 0.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
+            child: ListView(
+              padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 0.0),
+              children: <Widget> [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
                     Text(
                       'For today',
                       style: TextStyle(
@@ -48,8 +50,8 @@ class HomeScreen extends StatelessWidget {
                       child: GestureDetector(
                         onTap: () {
                           Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => HydrationScreen()),
+                            context,
+                            MaterialPageRoute(builder: (context) => HydrationScreen()),
                           );
                         },
                         child: Tile(
@@ -127,7 +129,7 @@ class HomeScreen extends StatelessWidget {
                 )
               ],
             ),
-          ),
+          ]),
         ),
       ),
     );

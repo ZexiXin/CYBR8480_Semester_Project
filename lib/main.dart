@@ -1,11 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:semeter_project_health_app/home_screen.dart';
+import 'file:///C:/Users/ZexiX/Desktop/UNO/CYBR8480labs/semeter_project_health_app/lib/supply/workout_record.dart';
 import 'package:semeter_project_health_app/routemap/googlemap.dart';
 import 'package:semeter_project_health_app/videoplayer/youtube.dart';
 import 'package:semeter_project_health_app/heartrate/heartbeatpersec.dart';
-import 'health_list.dart';
 import 'login/auth.dart';
 import 'login/discussion.dart';
 import 'supply/hydration_screen.dart';
@@ -89,17 +88,13 @@ class TabBarApp extends StatelessWidget {
 class CustomerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: CustomerAppView(),
-    );
+    return CustomerAppView();
   }
 }
 
 class HeartApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: HeartBPM(),
-    );
+    return HeartBPM();
   }
 }

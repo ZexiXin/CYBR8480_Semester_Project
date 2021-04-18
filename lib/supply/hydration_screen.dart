@@ -58,12 +58,9 @@ class HydrationScreen extends StatelessWidget {
               tag: 'cups',
               child: Icon(
                 Icons.opacity,
-                size: 80.0,
+                size: 60.0,
                 color: Colors.white,
               ),
-            ),
-            SizedBox(
-              height: 20.0,
             ),
             Text(
               'Hydration',
@@ -74,7 +71,7 @@ class HydrationScreen extends StatelessWidget {
               ),
             ),
             Text(
-              '4 of 12',
+              '7 of 12',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.white,
@@ -86,7 +83,7 @@ class HydrationScreen extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                padding: EdgeInsets.all(30.0),
+                padding: EdgeInsets.all(10.0),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -150,7 +147,7 @@ class HydrationScreen extends StatelessWidget {
                         ),
                         Expanded(
                           child: NumberTile(
-                            content: '+',
+                            content: '',
                             textColor: kSwatchBlueColor,
                           ),
                         ),
