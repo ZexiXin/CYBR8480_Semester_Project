@@ -135,7 +135,7 @@ Implementation has been submitted and please check the /lib/main file in this re
 
 
 ## Testing
-I will use the flutter Unit test to evalute if the HealthApp can pass those test. In general, I will test some values inside of each function to see if those have been changed after one widget has been pumped. 
+I will use the flutter Unit test to evalute if the HealthApp can pass those test. In general, I will test some values inside of each function to see if those have been changed after one widget has been pumped. All the test case can be viewed [Over Here!](https://github.com/ZexiXin/CYBR8480_Semester_Project/blob/main/test/widget_test.dart)
 
 
 | Test Function | Criteria | Test result | Need further modification |
