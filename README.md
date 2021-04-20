@@ -148,16 +148,10 @@ I will use the flutter Unit test to evalute if the HealthApp can pass those test
 
 
 ## Demo
-You will be expected to present your project to the class. You should prepare a 15-20 minute presentation that overviews your app and system, describes its requirement and design, demos its use, and overviews the testing you performed on the system.
 
-The video demo is here
-The slide can be viewed from here
+The video demo can be visited [here](https://app.vidgrid.com/view/tSy0JJZw5J3w)   
+The slide can be accessed from [here]()
 
-### Submission Materials
-Submit your slides by including them in your github repository. Upload a video to VidGrid and link it on your canvas submission and in the class-wide discussion thread.
-
-
-**Total 100 points.**
 
 ## Packaging and Release
 
@@ -181,12 +175,6 @@ While you are able to run this app in the emulator, you should see an UI similar
 flutter clean
 ```
 then try to rebuild the app on your device. The reason causes this is the file pubspec.yaml contains conflict class variables in different imported packages. 
-
-### Submission materials
-For this submission, you should
- * Package your code and/or deployment environment for release using [github](https://github.com/). (Optional) you may also use other potential deployment solutions such as Android play store, an APK distribution, [docker](https://www.docker.com/), etc in addition to github. 
- * Create a ```hardware/software requirements``` section in your github repository and list the hardware components, software, and other technology required to make your app work.
- * Create ```installation``` and ```getting started``` instructions using markdown in your repository to detail what an end-user must do to setup and use your product.
 
 
 #### License
