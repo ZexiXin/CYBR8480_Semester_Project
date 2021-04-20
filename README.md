@@ -150,7 +150,7 @@ I will use the flutter Unit test to evalute if the HealthApp can pass those test
 ## Demo
 
 The video demo can be visited [here](https://app.vidgrid.com/view/tSy0JJZw5J3w)   
-Since this file are too large to upload, so I removed the implementation video from it and provide a link to the complete presentation. The slide without implementation video can be accessed from [here](https://github.com/ZexiXin/CYBR8480_Semester_Project/blob/main/Semester%20Project%20Presentation.pptx)
+Since this file are too large to upload, so I uploaded the complete file on Canvas. Here, the slide without implementation video can be accessed from [here](https://github.com/ZexiXin/CYBR8480_Semester_Project/blob/main/Semester%20Project%20Presentation.pptx)
 
 
 ## Packaging and Release
